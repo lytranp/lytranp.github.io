@@ -1,0 +1,27 @@
+---
+layout: default
+title: Ly Tran
+---
+
+<div class="blurb">
+	<h1>Hi there, I'm Ly Tran</h1>
+
+	<p>I would like to write down what I have learnt in this blog.</p>
+	<ul class="posts">
+
+		{% for post in site.posts %}
+
+		<li>
+			<div>
+				<span style="float: right">{{ post.date | date: "%b %d, %Y" }}</span>
+				
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				<p style="line-height:2px">
+			</div>
+		</li>
+		{% endfor %}
+			
+
+	</ul>
+
+</div><!-- /.blurb -->
