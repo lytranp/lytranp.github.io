@@ -4,19 +4,18 @@ title: Math
 permalink: math
 ---
 <div class="posts">
-  {% for post in site.posts %}
-    {% if post.secondary == 'math' %}
-	<div class="post">
-		 <li>
-			<div>
-				<span style="float: right">{{ post.date | date: "%b %d, %Y" }}</span>
-				
-				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-				<p style="line-height:2px">
-			</div>
-		</li>
-	</div>
+  {% for post in paginator.posts %}
+    {% if post.secondary == 'secondary' %}
+      <div class="post">
+        <h1 class="post-title">
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h1>    
 
+        <span class="post-date">{{ post.date | date_to_string }}</span>    
+
+      </div>
     {% endif %}
   {% endfor %}
 </div>
