@@ -1,0 +1,28 @@
+---
+layout: default
+title: Programming
+permalink: programming
+---
+<section>
+	<ul>
+	{% for post in site.posts %}
+   		 {% if post.secondary == 'programming' %}
+    
+		<li>
+			<p style="font-size: 20px">
+
+			<div class="post-date">
+			<span>{{ post.date | date: "%b %d, %Y" }}</span>
+			</div>
+			<div class="title">
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</div>
+				
+			</p>
+		</li>
+    
+   	 	{% endif %}
+	{% endfor %}
+
+	</ul>
+</section>
