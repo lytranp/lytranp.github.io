@@ -9,7 +9,7 @@ permalink: datamining
    		 {% if post.secondary == 'datamining' %}
     
 		<li>
-			<body style="font-size: 20px">
+			<p style="font-size: 20px">
 
 			<div class="post-date">
 			<span>{{ post.date | date: "%b %d, %Y" }}</span>
@@ -18,7 +18,7 @@ permalink: datamining
 				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 			</div>
 				
-			</body>
+			</p>
 		</li>
     
    	 	{% endif %}
