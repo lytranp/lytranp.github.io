@@ -4,24 +4,25 @@ title: Data Mining
 permalink: datamining
 ---
 <section>
-<body style="font-size: 20px">
-
 	<ul>
 	{% for post in site.posts %}
-   		 {% if post.secondary == 'dataming' %}
+   		 {% if post.secondary == 'datamining' %}
     
 		<li>
+			<body style="font-size: 20px">
+
 			<div class="post-date">
 			<span>{{ post.date | date: "%b %d, %Y" }}</span>
 			</div>
 			<div class="title">
 				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 			</div>
+				
+			</body>
 		</li>
     
    	 	{% endif %}
 	{% endfor %}
 
 	</ul>
-</body>
 </section>
