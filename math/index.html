@@ -1,0 +1,32 @@
+---
+layout: default
+title: Math
+permalink: math
+---
+
+<!DOCTYPE html>
+<html>
+
+<div class="blurb">
+
+	<ul class="posts">
+
+		{% for post in site.posts %}
+		{% if post.secondary == 'math' %}  
+
+		<li>
+			<div>
+				<span style="float: right">{{ post.date | date: "%b %d, %Y" }}</span>
+				
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				<p style="line-height:2px">
+			</div>
+		</li>
+		{ % endif %}
+		{% endfor %}
+			
+
+	</ul>
+
+</div><!-- /.blurb -->
+</html>
