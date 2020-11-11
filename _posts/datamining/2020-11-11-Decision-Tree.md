@@ -8,7 +8,7 @@ date: 2020-11-21
 
 1. Case study 
 
-![](DataMining-DecisionTree.png)
+![](/sources/DataMining-DecisionTree.png)
 
 2. At each node, we will see how well these candidates (Chest Pain, Weight) separate patients with heart disease (HD) and patients with no heart disease.
 
@@ -18,15 +18,15 @@ Question: How to know which candidate we will choose to do root node. If so, wha
 
 Step 1: Split data at each node
 
-![](DataMining-DecisionTree2.png)
+![](/sources/DataMining-DecisionTree2.png)
 
 Weight
 
 Because weight is numeric, we will use all of distinct values as splitting value. At each distinct value, we will compare <= 40; <= 50
 
-![](DataMining-DecisionTree3.png)
+![](/sources/DataMining-DecisionTree3.png)
 
-![](DataMining-DecisionTree4.png)
+![](/sources/DataMining-DecisionTree4.png)
 
 Step 2: Evaluate splits
 There are 3 populuar ways
