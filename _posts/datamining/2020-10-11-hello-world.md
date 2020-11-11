@@ -8,6 +8,6 @@ date: 2020-10-23
 
 ## Hello World!
 
-![](/sources/test1.png)
+![test1](/sources/test1.png)
 
 Finally, we can create it.
