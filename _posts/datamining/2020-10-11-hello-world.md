@@ -8,6 +8,6 @@ date: 2020-10-23
 
 ## Hello World!
 
-![test1]("https://github.com/lytranp/lytranp.github.io/blob/main/_posts/datamining/2020-11-10-16-42-16.png")
+![test1](https://github.com/lytranp/lytranp.github.io/blob/main/_posts/datamining/2020-11-10-16-42-16.png)
 
 Finally, we can create it.
