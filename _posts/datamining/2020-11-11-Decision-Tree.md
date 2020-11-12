@@ -40,37 +40,48 @@ At each distinct value, we will compare <= 40; <= 50
 **Step 2**: Evaluate splits
 
 There are 3 popular ways:
-Use Logworth
-Use Gini impurity
-Use Entropy
++ Use Logworth
+
++ Use Gini impurity
+
++ Use Entropy
 
 We use these measurements to calculate for each node at different threshold, then compare among these nodes to select the best.
  
 At each node, compute GINI left side and GINI right side, then compute final GINI index
 
-$$ GINI = 1 - (P)^2 $$
-
+$$ 
+GINI = 1 - (P)^2 
+$$
 
  **Example**: GINI index for Chest Pain (2 levels: Yes & No)
 
- $$ GINI = 1 - (P)^2 
-         = 1 - {P(Yes)^2 + P(No)^2} $$ 
+$$ 
+ GINI = 1 - (P)^2 
+         = 1 - {P(Yes)^2 + P(No)^2}
+$$ 
 
 At Chest Pain:
 
 GINI left
+
 $$ 1 - (\frac{2}{3})^2 - (\frac{1}{3})^2 = 0.44  $$
 
 GINI right
+
 $$ 1 - (\frac{1}{2})^2 - (\frac{1}{2})^2 = 0.5 $$
 
-GINI final
-        P(Left side) * GINI left + P(Right side) * GINI right 
-where:  P(Left side) = P(YES OF CHEST PAIN ON ALL DATA) 
+GINI final = P(Left side) * GINI left + P(Right side) * GINI right 
 
-        P(Left side) = P(NO OF CHEST PAIN ON ALL DATA)
+where:  
+
+P(Left side) = P(YES OF CHEST PAIN ON ALL DATA) 
+
+P(Right side) = P(NO OF CHEST PAIN ON ALL DATA)
         
-$$(\frac{3}{5}) * 0.44 + (\frac{2}{5}) * 0.5 = 0.47 $$
+$$
+(\frac{3}{5}) * 0.44 + (\frac{2}{5}) * 0.5 = 0.47 
+$$
 
 Similarly, we can compute GINI final for Weight at splitting values 40 and 50
 
@@ -103,12 +114,15 @@ Similarly, compute GINI final at splitting value = 40; 50 and Obese, given No to
 ![](/sources/DataMining-DecisionTree6.png)
 
 GINI left
+
 $$ 1 - (1)^2 - 0 = 1$$
 
 GINI right
+
 $$ 1 - (\frac{1}{2})^2 - (\frac{1}{2})^2 = 0.5 $$
 
 GINI final
+
 $$ \frac{1}{3} * 1 + \frac{2}{3} * 0.5 = 0.67 $$
 
 **Example:** Compute Gini Final at spliting value = 50 on the left side of Chest Pain
@@ -116,6 +130,7 @@ $$ \frac{1}{3} * 1 + \frac{2}{3} * 0.5 = 0.67 $$
 ![](/sources/DataMining-DecisionTree7.png)
 
 GINI final
+
 $$ 
      1 * (1 - (\frac{2}{3})^2 - (\frac{1}{3})^2) + 0 = 0.44 
 $$
@@ -131,4 +146,3 @@ Gini impurity does not improve
 
 Reach maximum depth allowed for tree
 
-$$ I_G(D_\text{root}) = 1 - 2/5^2 + 2/5^2 + 1/5^2 = 0.64 $$
