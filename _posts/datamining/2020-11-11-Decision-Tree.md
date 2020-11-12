@@ -7,35 +7,35 @@ secondary: datamining
 date: 2020-11-21
 ---
 
-### 1. Case study 
+## 1. Case study 
 
-![](/sources/DataMining-DecisionTree.png){:height="50%" width="50%"}
+![](/sources/DataMining-DecisionTree.png){:height="60%" width="60%"}
 
-### 2. Choose candidate to split 
+## 2. Choose candidate to split 
 
 At each node, we will see how well these candidates (Chest Pain, Weight) separate patients with heart disease (HD) and patients with no heart disease.
 
 Question: How to know which candidate we will choose to do root node. If so, what splitting value we will choose ?
 
-### 3. Solution
+## 3. Solution
 
 **Step 1**: Split data at each node
 
-![](/sources/DataMining-DecisionTree2.png){:height="50%" width="50%"}
+![](/sources/DataMining-DecisionTree2.png){:height="60%" width="60%"}
 
-![](/sources/DataMining-DecisionTree2.png){:height="50%" width="50%"}
+![](/sources/DataMining-DecisionTree2.png){:height="60%" width="60%"}
 
 Start with candidate "Weight": Because weight is numeric, we will use all of distinct values as splitting value. 
 
 At each distinct value, we will compare <= 40; <= 50
 
-![](/sources/DataMining-DecisionTree3.png){:height="50%" width="50%"}
+![](/sources/DataMining-DecisionTree3.png){:height="60%" width="60%"}
 
-![](/sources/DataMining-DecisionTree4.png){:height="50%" width="50%"}
+![](/sources/DataMining-DecisionTree4.png){:height="60%" width="60%"}
 =======
-![](/sources/DataMining-DecisionTree3.png){:height="50%" width="50%"}
+![](/sources/DataMining-DecisionTree3.png){:height="60%" width="60%"}
 
-![](/sources/DataMining-DecisionTree4.png){:height="50%" width="50%"}
+![](/sources/DataMining-DecisionTree4.png){:height="60%" width="60%"}
 
 **Step 2**: Evaluate splits
 
@@ -75,9 +75,9 @@ GINI final = P(Left side) * GINI left + P(Right side) * GINI right
 
 where:  
 
-P(Left side) = P(YES OF CHEST PAIN ON ALL DATA) 
+P(Left side) = P(YES of Chest Pain on all data) 
 
-P(Right side) = P(NO OF CHEST PAIN ON ALL DATA)
+P(Right side) = P(NO of Chest Pain on all data)
         
 $$
 (\frac{3}{5}) * 0.44 + (\frac{2}{5}) * 0.5 = 0.47 
@@ -93,9 +93,9 @@ Example, GINI final of Chest Pain is the lowest, mean that although Chest Pain d
 
 Now, we have to decide what splitting value (40 or 50) we should put on the left side of Chest Pain.
 
-![](/sources/DataMining-DecisionTree5.png){:height="50%" width="50%"}
+![](/sources/DataMining-DecisionTree5.png){:height="40%" width="40%"}
 
-![](/sources/DataMining-DecisionTree5b.png){:height="50%" width="50%"}
+![](/sources/DataMining-DecisionTree5b.png){:height="40%" width="40%"}
 
 Compute GINI final at splitting value = 40, given Yes to Chest pain
 
@@ -111,7 +111,7 @@ Similarly, compute GINI final at splitting value = 40; 50 and Obese, given No to
 
 **Example**: Compute GINI final at splitting value = 40 on the left side of Chest Pain. Now the left side of Chest Pain only has 3 patients in total. Among 3 these patients, there is 1 patient with weight < 40 and 2 people with weight > 40
 
-![](/sources/DataMining-DecisionTree6.png){:height="50%" width="50%"}
+![](/sources/DataMining-DecisionTree6.png){:height="60%" width="60%"}
 
 GINI left
 
@@ -127,7 +127,7 @@ $$ \frac{1}{3} * 1 + \frac{2}{3} * 0.5 = 0.67 $$
 
 **Example:** Compute Gini Final at spliting value = 50 on the left side of Chest Pain
 
-![](/sources/DataMining-DecisionTree7.png){:height="50%" width="50%"}
+![](/sources/DataMining-DecisionTree7.png){:height="60%" width="60%"}
 
 GINI final
 
@@ -137,12 +137,12 @@ $$
 
 Let's say GINI final of spliting value = 50 is the lowest, given YES to Chest Pain, then the tree improves like this
 
-![](/sources/DataMining-DecisionTree8.png){:height="50%" width="50%"}
+![](/sources/DataMining-DecisionTree8.png){:height="60%" width="60%"}
 
 **Step 5:** We keep spliting data into smaller until:
-Reach min number of samples in a node
++ Reach min number of samples in a node
 
-Gini impurity does not improve
++ Gini impurity does not improve
 
-Reach maximum depth allowed for tree
++ Reach maximum depth allowed for tree
 
