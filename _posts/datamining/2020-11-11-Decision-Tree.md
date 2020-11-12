@@ -130,6 +130,4 @@ Gini impurity does not improve
 
 Reach maximum depth allowed for tree
 
-$$
-    I_G(D_\text{root}) = 1 - 2/5^2 + 2/5^2 + 1/5^2 = 0.64
-$$
+$$ I_G(D_\text{root}) = 1 - 2/5^2 + 2/5^2 + 1/5^2 = 0.64 $$
