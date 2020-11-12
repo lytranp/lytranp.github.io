@@ -47,29 +47,29 @@ We use these measurements to calculate for each node at different threshold, the
  
  At each node, compute GINI left side and GINI right side, then compute final GINI index
 
->$$ GINI = 1 - (P)^2 $$
+$$ GINI = 1 - (P)^2 $$
 
 
  **Example**: GINI index for Chest Pain (2 levels: Yes & No)
 
- >$$ GINI = 1 - (P)^2 
+ $$ GINI = 1 - (P)^2 
          = 1 - {P(Yes)^2 + P(No)^2} $$ 
 
 At Chest Pain:
 
 - GINI left
->$$ 1 - (\frac{2}{3})^2 - (\frac{1}{3})^2 = 0.44  $$
+$$ 1 - (\frac{2}{3})^2 - (\frac{1}{3})^2 = 0.44  $$
 
 - GINI right
->$$ 1 - (\frac{1}{2})^2 - (\frac{1}{2})^2 = 0.5 $$
+$$ 1 - (\frac{1}{2})^2 - (\frac{1}{2})^2 = 0.5 $$
 
 - GINI final
->       P(Left side) * GINI left + P(Right side) * GINI right 
+        P(Left side) * GINI left + P(Right side) * GINI right 
 where:  P(Left side) = P(YES OF CHEST PAIN ON ALL DATA) 
 
         P(Left side) = P(NO OF CHEST PAIN ON ALL DATA)
         
->$$(\frac{3}{5}) * 0.44 + (\frac{2}{5})*0.5 = 0.47$$
+$$(\frac{3}{5}) * 0.44 + (\frac{2}{5}) * 0.5 = 0.47 $$
 
 Similarly, we can compute GINI final for Weight at splitting values 40 and 50
 
@@ -100,20 +100,20 @@ Similarly, compute GINI final at splitting value = 40; 50 and Obese, given No to
 >![](/sources/DataMining-DecisionTree6.png)
 
 GINI left
->$$ 1 - (1)^2 - 0 = 1$$
+$$ 1 - (1)^2 - 0 = 1$$
 
 GINI right
->$$ 1 - (\frac{1}{2})^2 - (\frac{1}{2})^2 = 0.5$$
+$$ 1 - (\frac{1}{2})^2 - (\frac{1}{2})^2 = 0.5 $$
 
 GINI final
->$$ \frac{1}{3} * 1 + \frac{2}{3} * 0.5 = 0.67$$
+$$ \frac{1}{3} * 1 + \frac{2}{3} * 0.5 = 0.67 $$
 
 **Example:** Compute Gini Final at spliting value = 50 on the left side of Chest Pain
 
 >![](/sources/DataMining-DecisionTree7.png)
 
 GINI final
->$$1 * (1 - (\frac{2}{3})^2 - (\frac{1}{3})^2) + 0 = 0.44$$
+$$1 * (1 - (\frac{2}{3})^2 - (\frac{1}{3})^2) + 0 = 0.44 $$
 
 Let's say GINI final of spliting value = 50 is the lowest, given YES to Chest Pain, then the tree improves like this
 
