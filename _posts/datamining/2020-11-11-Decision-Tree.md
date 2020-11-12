@@ -1,5 +1,6 @@
 ---
 layout: post
+mathjax: true
 title: "Decision Tree - Gini Index!"
 read: 5
 secondary: datamining
