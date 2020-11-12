@@ -20,8 +20,8 @@ At each node, we will see how well these candidates (Chest Pain, Weight) separat
 
 **Step 1**: Split data at each node
 =======
+
 ![](/sources/DataMining-DecisionTree2.png)
->>>>>>> b393bd1eabb1b9d045a5e709c11df9408654366e
 
 >![](/sources/DataMining-DecisionTree2.png)
 
