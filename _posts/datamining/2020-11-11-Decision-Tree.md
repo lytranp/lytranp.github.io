@@ -25,8 +25,9 @@ Question: How to know which candidate we will choose to do root node. If so, wha
 
 ![](/sources/DataMining-DecisionTree2.png)
 
-Start with candidate "Weight":
-Because weight is numeric, we will use all of distinct values as splitting value. At each distinct value, we will compare <= 40; <= 50
+Start with candidate "Weight": Because weight is numeric, we will use all of distinct values as splitting value. 
+
+At each distinct value, we will compare <= 40; <= 50
 
 ![](/sources/DataMining-DecisionTree3.png)
 
@@ -39,13 +40,13 @@ Because weight is numeric, we will use all of distinct values as splitting value
 **Step 2**: Evaluate splits
 
 There are 3 popular ways:
-* Use Logworth
-* Use Gini impurity
-* Use Entropy
+Use Logworth
+Use Gini impurity
+Use Entropy
 
 We use these measurements to calculate for each node at different threshold, then compare among these nodes to select the best.
  
- At each node, compute GINI left side and GINI right side, then compute final GINI index
+At each node, compute GINI left side and GINI right side, then compute final GINI index
 
 $$ GINI = 1 - (P)^2 $$
 
@@ -57,13 +58,13 @@ $$ GINI = 1 - (P)^2 $$
 
 At Chest Pain:
 
-- GINI left
+GINI left
 $$ 1 - (\frac{2}{3})^2 - (\frac{1}{3})^2 = 0.44  $$
 
-- GINI right
+GINI right
 $$ 1 - (\frac{1}{2})^2 - (\frac{1}{2})^2 = 0.5 $$
 
-- GINI final
+GINI final
         P(Left side) * GINI left + P(Right side) * GINI right 
 where:  P(Left side) = P(YES OF CHEST PAIN ON ALL DATA) 
 
@@ -85,9 +86,11 @@ Now, we have to decide what splitting value (40 or 50) we should put on the left
 
 ![](/sources/DataMining-DecisionTree5b.png)
 
-- Compute GINI final at splitting value = 40, given Yes to Chest pain
-- Compute GINI final at splitting value = 50, given Yes to Chest pain
-- Let's say we have extra candidate: Obese (with 2 levels), we also will compute GINI final of Obese as we did with Chest Pain
+Compute GINI final at splitting value = 40, given Yes to Chest pain
+
+Compute GINI final at splitting value = 50, given Yes to Chest pain
+
+Let's say we have extra candidate: Obese (with 2 levels), we also will compute GINI final of Obese as we did with Chest Pain
 
 => Choose splitting value with the lowest GINI final to do child node of left side of Chest Pain
 
@@ -122,9 +125,11 @@ Let's say GINI final of spliting value = 50 is the lowest, given YES to Chest Pa
 ![](/sources/DataMining-DecisionTree8.png)
 
 **Step 5:** We keep spliting data into smaller until:
-- Reach min number of samples in a node
-- Gini impurity does not improve
-- Reach maximum depth allowed for tree
+Reach min number of samples in a node
+
+Gini impurity does not improve
+
+Reach maximum depth allowed for tree
 
 $$
     I_G(D_\text{root}) = 1 - 2/5^2 + 2/5^2 + 1/5^2 = 0.64
