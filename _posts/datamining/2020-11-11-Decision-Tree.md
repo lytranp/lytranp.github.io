@@ -14,7 +14,7 @@ date: 2020-11-21
 
 At each node, we will see how well these candidates (Chest Pain, Weight) separate patients with heart disease (HD) and patients with no heart disease.
 
->Question: How to know which candidate we will choose to do root node. If so, what splitting value we will choose ?
+Question: How to know which candidate we will choose to do root node. If so, what splitting value we will choose ?
 
 ### 3. Solution
 
@@ -23,14 +23,14 @@ At each node, we will see how well these candidates (Chest Pain, Weight) separat
 
 ![](/sources/DataMining-DecisionTree2.png)
 
->![](/sources/DataMining-DecisionTree2.png)
+![](/sources/DataMining-DecisionTree2.png)
 
 Start with candidate "Weight":
 Because weight is numeric, we will use all of distinct values as splitting value. At each distinct value, we will compare <= 40; <= 50
 
->![](/sources/DataMining-DecisionTree3.png)
+![](/sources/DataMining-DecisionTree3.png)
 
->![](/sources/DataMining-DecisionTree4.png)
+![](/sources/DataMining-DecisionTree4.png)
 =======
 ![](/sources/DataMining-DecisionTree3.png)
 
@@ -81,9 +81,9 @@ Example, GINI final of Chest Pain is the lowest, mean that although Chest Pain d
 
 Now, we have to decide what splitting value (40 or 50) we should put on the left side of Chest Pain.
 
->![](/sources/DataMining-DecisionTree5.png) 
+![](/sources/DataMining-DecisionTree5.png) 
 
->![](/sources/DataMining-DecisionTree5b.png)
+![](/sources/DataMining-DecisionTree5b.png)
 
 - Compute GINI final at splitting value = 40, given Yes to Chest pain
 - Compute GINI final at splitting value = 50, given Yes to Chest pain
@@ -97,7 +97,7 @@ Similarly, compute GINI final at splitting value = 40; 50 and Obese, given No to
 
 **Example**: Compute GINI final at splitting value = 40 on the left side of Chest Pain. Now the left side of Chest Pain only has 3 patients in total. Among 3 these patients, there is 1 patient with weight < 40 and 2 people with weight > 40
 
->![](/sources/DataMining-DecisionTree6.png)
+![](/sources/DataMining-DecisionTree6.png)
 
 GINI left
 $$ 1 - (1)^2 - 0 = 1$$
@@ -110,16 +110,22 @@ $$ \frac{1}{3} * 1 + \frac{2}{3} * 0.5 = 0.67 $$
 
 **Example:** Compute Gini Final at spliting value = 50 on the left side of Chest Pain
 
->![](/sources/DataMining-DecisionTree7.png)
+![](/sources/DataMining-DecisionTree7.png)
 
 GINI final
-$$1 * (1 - (\frac{2}{3})^2 - (\frac{1}{3})^2) + 0 = 0.44 $$
+$$ 
+     1 * (1 - (\frac{2}{3})^2 - (\frac{1}{3})^2) + 0 = 0.44 
+$$
 
 Let's say GINI final of spliting value = 50 is the lowest, given YES to Chest Pain, then the tree improves like this
 
->![](/sources/DataMining-DecisionTree8.png)
+![](/sources/DataMining-DecisionTree8.png)
 
 **Step 5:** We keep spliting data into smaller until:
 - Reach min number of samples in a node
 - Gini impurity does not improve
 - Reach maximum depth allowed for tree
+
+$$
+    I_G(D_\text{root}) = 1 - 2/5^2 + 2/5^2 + 1/5^2 = 0.64
+$$
