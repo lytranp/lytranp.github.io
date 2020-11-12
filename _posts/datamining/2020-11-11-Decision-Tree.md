@@ -18,7 +18,6 @@ At each node, we will see how well these candidates (Chest Pain, Weight) separat
 
 ### 3. Solution
 
-<<<<<<< HEAD
 **Step 1**: Split data at each node
 =======
 ![](/sources/DataMining-DecisionTree2.png)
@@ -29,7 +28,6 @@ At each node, we will see how well these candidates (Chest Pain, Weight) separat
 Start with candidate "Weight":
 Because weight is numeric, we will use all of distinct values as splitting value. At each distinct value, we will compare <= 40; <= 50
 
-<<<<<<< HEAD
 >![](/sources/DataMining-DecisionTree3.png)
 
 >![](/sources/DataMining-DecisionTree4.png)
@@ -37,7 +35,6 @@ Because weight is numeric, we will use all of distinct values as splitting value
 ![](/sources/DataMining-DecisionTree3.png)
 
 ![](/sources/DataMining-DecisionTree4.png)
->>>>>>> b393bd1eabb1b9d045a5e709c11df9408654366e
 
 **Step 2**: Evaluate splits
 
