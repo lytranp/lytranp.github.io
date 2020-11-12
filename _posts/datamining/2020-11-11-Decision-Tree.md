@@ -9,7 +9,7 @@ date: 2020-11-21
 
 ### 1. Case study 
 
-![](/sources/DataMining-DecisionTree.png)
+![](/sources/DataMining-DecisionTree.png){:height="50%" width="50%"}
 
 ### 2. Choose candidate to split 
 
