@@ -19,7 +19,6 @@ Question: How to know which candidate we will choose to do root node. If so, wha
 ### 3. Solution
 
 **Step 1**: Split data at each node
-=======
 
 ![](/sources/DataMining-DecisionTree2.png)
 
