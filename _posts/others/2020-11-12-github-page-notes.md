@@ -6,7 +6,7 @@ read: 5
 secondary: others
 date: 2020-11-12
 ---
-*This post was written as my thank to [Chris Emmery](https://cmry.github.io/).
+*This post was written as my thank to* [Chris Emmery](https://cmry.github.io/).
 
 I happened to read his blog and I also wanted to build a similar page as his one to write down what I learned. So, I emailed him and he provided me the tutorial to follow. Because I am very new to front-end, I also learned the way he structured on github.
 
@@ -14,13 +14,13 @@ During the process of building Github Page, here are some things that you might 
 
 ## 1. Write markdown files
 
-I use Markdown, Math syntax, Image paste and integrate Github on Visual Studio code to write and upload posts.
+I use [Markdown All in one](https://www.programmersought.com/article/94051435573/) extension to write markdown files and Math equations. Also, I use Image paste extension for embeding images in markdown files. Finally,I integrate Github on Visual Studio code to git pull, git add, git commit and git push posts. 
 
 ## 2. Display images on Github page
 
 I have to store images in a separate folder (sources) and link it to posts in another folder (_posts)
 
-> [![](/sources/image.png){:height="60%" width="60%"}]
+> ![](sources/Others-github-page-notes.png)
 
 It will not work if putting images and posts at the same folder.
 
