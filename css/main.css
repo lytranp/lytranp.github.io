@@ -41,3 +41,10 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+#banner {
+    background-image: url('test2.png') no-repeat;
+    width: 100%;
+    height: auto;
+    background-position: center;
+}
