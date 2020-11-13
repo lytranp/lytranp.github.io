@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World!"
 read: 1
-secondary: datamining
+secondary: others
 date: 2020-10-23
 ---
 
