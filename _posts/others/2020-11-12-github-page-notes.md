@@ -6,13 +6,13 @@ read: 5
 secondary: others
 date: 2020-11-12
 ---
-*This post was written as my thank to [Chris Emmery] (https://cmry.github.io/).
+*This post was written as my thank to [Chris Emmery](https://cmry.github.io/).
 
 I happened to read his blog and I also wanted to build a similar page as his one to write down what I learned. So, I emailed him and he provided me the tutorial to follow. Because I am very new to front-end, I also learned the way he structured on github.
 
-During the process of building Github Page, here are some of things that you might want to know.
+During the process of building Github Page, here are some things that you might want to know.
 
-## 1. Markdown
+## 1. Write markdown files
 
 I use Markdown, Math syntax, Image paste and integrate Github on Visual Studio code to write and upload posts.
 
@@ -20,7 +20,7 @@ I use Markdown, Math syntax, Image paste and integrate Github on Visual Studio c
 
 I have to store images in a separate folder (sources) and link it to posts in another folder (_posts)
 
->![](/sources/image.png){:height="60%" width="60%"}
+> [![](/sources/image.png){:height="60%" width="60%"}]
 
 It will not work if putting images and posts at the same folder.
 
@@ -28,11 +28,11 @@ It will not work if putting images and posts at the same folder.
 
 I followed this instruction and it works: [Multiple Blogs](https://stochastic.life/2016/01/06/multiple-blogs-on-single-jekyll-instance/)
 
-## 3. Write Math equation 
+## 4. Write Math equation 
 
-I use Markdown-in-all extension on visual studio code and followed this document to write Math equation [Katex] (https://katex.org/docs/supported.html)
+I use Markdown-in-all extension on visual studio code and followed this document to write Math equation [Katex](https://katex.org/docs/supported.html)
 
-## Display on Github page
+## 5. Display on Github page
 
 After you write Math equations within $$ $$, it will still not display on Github Page until you enable "MathJax". 
 
