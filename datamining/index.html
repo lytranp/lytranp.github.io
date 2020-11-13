@@ -3,22 +3,23 @@ layout: default
 title: Data Mining
 permalink: datamining
 ---
-<section>
-	<ul>
-	{% for post in site.posts %}
-   		 {% if post.secondary == 'datamining' %}
-    
-		<li>
-			<div>
-				<span style="float: right">{{ post.date | date: "%b %d, %Y" }}</span>
-				
-				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-				<p style="line-height:2px">
-			</div>
-		</li>
-    
-   	 	{% endif %}
-	{% endfor %}
 
-	</ul>
-</section>
+<div class="posts">
+  {% for post in site.posts %}
+    {% if post.secondary == 'datamining' %}
+ 
+    <span style="float: right">{{ post.date | date: "%b %d, %Y" }}</span>
+
+      <div class="post">
+        <h1 class="post-title">
+          <a href="{{ post.url }}">
+            <h1 style="color:light blue;font-size:15px;">{{ post.title }}</h1>  
+          </a>
+        </h1>    
+     
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+
