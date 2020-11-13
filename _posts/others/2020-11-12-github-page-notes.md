@@ -3,7 +3,7 @@ layout: post
 mathjax: true
 title: "Github Page - Some notes!"
 read: 5
-secondary: others
+secondary: math
 date: 2020-11-12
 ---
 *This post was written as my thank to* [Chris Emmery](https://cmry.github.io/).
