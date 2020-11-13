@@ -3,26 +3,19 @@ layout: default
 title: Others
 permalink: others
 ---
-<section>
-	<ul>
-	{% for post in site.posts %}
-   		 {% if post.secondary == 'others' %}
-    
-		<li>
-			<p style="font-size: 20px">
+<div class="posts">
+  {% for post in site.posts %}
+    {% if post.secondary == 'others' %}
+      <div class="post">
+        <h1 class="post-title">
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h1>    
 
-			<div class="post-date">
-			<span>{{ post.date | date: "%b %d, %Y" }}</span>
-			</div>
-			<div class="title">
-				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-			</div>
-				
-			</p>
-		</li>
-    
-   	 	{% endif %}
-	{% endfor %}
+        <span class="post-date">{{ post.date | date_to_string }}</span>    
 
-	</ul>
-</section>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
