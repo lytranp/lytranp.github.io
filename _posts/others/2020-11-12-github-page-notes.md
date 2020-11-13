@@ -34,11 +34,11 @@ I use Markdown-in-all extension on visual studio code and followed this document
 
 ## 5. Display on Github page
 
-After you write Math equations within $$ $$, it will still not display on Github Page until you enable "MathJax". 
+After you write Math equations, it will still not display on Github Page until you enable "MathJax". 
 
 Follow this instruction, it might work for you: [MathJax](http://sgeos.github.io/github/jekyll/2016/08/21/adding_mathjax_to_a_jekyll_github_pages_blog.html)
 
-You can check my post to see how Math equations were displayed: [Decision Tree](/_posts/datamining/2020-11-11-Decision-Tree.md)
+You can check my post to see how Math equations were displayed: [Decision Tree](https://lytranp.github.io/notes/Decision-Tree)
 
 
 
