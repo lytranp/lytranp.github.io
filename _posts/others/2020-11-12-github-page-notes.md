@@ -20,7 +20,7 @@ I use [Markdown All in one](https://www.programmersought.com/article/94051435573
 
 I have to store images in a separate folder (sources) and link it to posts in another folder (_posts)
 
-> ![](sources/Others-github-page-notes.png)
+> ![](/sources/Others-github-page-notes.png)
 
 It will not work if putting images and posts at the same folder.
 
