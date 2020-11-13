@@ -42,7 +42,7 @@ ul.posts li {
     list-style: none;
 }
 
-#banner {
+banner {
     background-image: url('test2.png') no-repeat;
     width: 100%;
     height: auto;
