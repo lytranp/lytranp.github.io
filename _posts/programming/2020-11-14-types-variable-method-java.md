@@ -90,5 +90,10 @@ Let's say class "BankAccountMain.java" wants to call the variable "test" from "B
 
   + Usage: It is called directly from class (without having to initialize object)
 
-> Airplane.aircraftCount;
+                    >Airplane.aircraftCount;
+
+## 2. Methods
+**a. General syntax of function declare**
+Access Modifiers + Primitive Data Type + Variable name
+
 
