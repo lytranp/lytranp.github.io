@@ -11,24 +11,24 @@ date: 2020-11-21
 
 Declaring variables and methods in Java might be confusing. That is the reason this post is written. 
 
-### 1. Variable
+## 1. Variable
 
 **a. General syntax of variable declare**
 
 Access Modifiers + Primitive Data Type + Variable name
 
->               	private int volumeLevel = 1;
+>               	###private int volumeLevel = 1;
 
 *Primitive Data Type*: byte, short, int, long, float, double, boolean, char
 
 *Access Modifiers*: include 4 types (Default, Private, Public, Protected)
 
-![](Programming-types-variable-method-java.png){:height="60%" width="60%"}
+![](/sources/Programming-types-variable-method-java.png){:height="60%" width="60%"}
 
 **Example:**
 Here is the structure of a package. In a package, there are many classes. For example, in package myOOP, there are many classes.java. 
 
-![](Programming-types-variable-method-java2.png){:height="60%" width="60%"}
+![](/sources/Programming-types-variable-method-java2.png){:height="60%" width="60%"}
 
 Let's in class "BankAccount.java", we declare a variable
 
