@@ -17,7 +17,7 @@ Declaring variables and methods in Java might be confusing. That is the reason t
 
 Access Modifiers + Primitive Data Type + Variable name
 
-###>               	private int volumeLevel = 1;
+>               	**private int volumeLevel = 1;**
 
 *Primitive Data Type*: byte, short, int, long, float, double, boolean, char
 
