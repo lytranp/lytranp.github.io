@@ -84,7 +84,7 @@ Let's say class "BankAccountMain.java" wants to call the variable "test" from "B
 ```              newAirplane.model;                                 ```
             
 
-*Note*: Because model is private, so it can not be called outside of class. Actually, it should be called through a method of class "getModel()"
+|*Note*: Because model is private, so it can not be called outside of class. Actually, it should be called through a method of class "getModel()"
 
 ```                         newAirplane.getModel();                 ```
 
@@ -122,7 +122,7 @@ Access Modifiers + Primitive Data Type + Function name ()
 
 >```                 or newAirplane.getAircraftCount();```
 
-
+|  
 
 
 
