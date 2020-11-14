@@ -80,12 +80,13 @@ Let's say class "BankAccountMain.java" wants to call the variable "test" from "B
 
         
 ```              Airplane newAirplane = new Airplane("AIRBUS", 320);```
+
 ```              newAirplane.model;                                 ```
             
 
 *Note*: Because model is private, so it can not be called outside of class. Actually, it should be called through a method of class "getModel()"
 
-```              newAirplane.getModel();```
+```                         newAirplane.getModel();                 ```
 
 ![](/sources/Programming-types-variable-method-java7.png){:height="60%" width="60%"}
 
@@ -95,7 +96,7 @@ Let's say class "BankAccountMain.java" wants to call the variable "test" from "B
 
   + Usage: It is called directly from class (without having to initialize object)
 
-```                     Airplane.aircraftCount;                 ```
+>```                       Airplane.aircraftCount;                 ```
 
 
 ## 2. Function/Method
@@ -111,14 +112,15 @@ Access Modifiers + Primitive Data Type + Function name ()
 
 *Instance method*: Firstly, we also have to initialize object. Then, we call method through object
 
-```                 newAirplane.getModel();             ```
+>```                  newAirplane.getModel();             ```
 
 *Static method*: We can call methods and functions directly from Class "AirPlane" (or call through object).
 
 > ![](/sources/Programming-types-variable-method-java8.png){:height="60%" width="60%"}
 
->```                AirPlane.getAircraftCount(); ```
-```                 or newAirplane.getAircraftCount();```
+>```                    AirPlane.getAircraftCount(); ```
+
+>```                 or newAirplane.getAircraftCount();```
 
 
 
