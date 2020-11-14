@@ -118,13 +118,9 @@ Access Modifiers + Primitive Data Type + Function name ()
 
 > ![](/sources/Programming-types-variable-method-java8.png){:height="60%" width="60%"}
 
-```java             
-AirPlane.getAircraftCount(); 
-```
-or
-```java
-newAirplane.getAircraftCount();
-```
+>```                        AirPlane.getAircraftCount();            ```
+
+>```newAirplane.getAircraftCount();```
 
 |  
 
