@@ -92,8 +92,32 @@ Let's say class "BankAccountMain.java" wants to call the variable "test" from "B
 
                     >Airplane.aircraftCount;
 
-## 2. Methods
+## 2. Function/Method
 **a. General syntax of function declare**
-Access Modifiers + Primitive Data Type + Variable name
+
+Access Modifiers + Primitive Data Type + Function name ()
+
+> public boolean deposit(double amount)
+> 
+*Access Modifiers: remain true to functions and methods
+
+**b. Call function/method**
+
++ Instance method: Firstly, we also have to initialize object. Then, we call method through object
+
+> newAirplane.getModel();
+
++ Static method: We can call methods and functions directly from Class "AirPlane" (or call through object).
+
+> ![](/sources/Programming-types-variable-method-java8.png){:height="60%" width="60%"}
+
+> AirPlane.getAircraftCount(); or newAirplane.getAircraftCount();
+
+
+
+
+
+
+
 
 
