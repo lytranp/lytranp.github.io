@@ -15,7 +15,7 @@ Website loads the browser, you can read, view or listen to the content. What rea
 
 a. Address bar: 
 + Filled with a URL
-* A locator following a universal standard that points a specific resource on the web and that resource is the document you are trying to access. Besides, that resource is a server connected to the internet and its IP address is mapped to the domain you used in a DNS 
++ A locator following a universal standard that points a specific resource on the web and that resource is the document you are trying to access. Besides, that resource is a server connected to the internet and its IP address is mapped to the domain you used in a DNS 
   
 b. Process
 
@@ -27,10 +27,10 @@ Enter URL in the address bar -> User hit Return
 
 -> The URL is sent to DNS and DNS figures out which IP address domain points at and passes the request to the server on that IP address
 
-c. Resources 
-- Resource received by the browser is in HTML (HTML is document for the worldwide web).
--  In HTML, it contains all content of pages, references to media, image, audio.
--  It also contain links to CSS (contain instructions on how the content is displayed on the browser) and JavaScript (small programs that run in the browsers)
+c. Resources
++ Resource received by the browser is in HTML (HTML is document for the worldwide web).
++ In HTML, it contains all content of pages, references to media, image, audio.
++ It also contain links to CSS (contain instructions on how the content is displayed on the browser) and JavaScript (small programs that run in the browsers)
 
 Finally, the browser puts HTML, CSS and JavaScript together
 
