@@ -59,7 +59,7 @@ Finally, the browser puts HTML, CSS and JavaScript together
 + Rules are applied from the top of style sheet down
 
 *c. JavaScript*
-JavaScript: add interactivity on the top of CSS ad HTML. It interacts with DOM by manipulating DOM nodes.  
++ Add interactivity on the top of CSS ad HTML. It interacts with DOM by manipulating DOM nodes.  
 
 *d. Process of HTML, CSS, JavaScript*
 User enter URL -> Browser pulls down the HTML document -> download CSS and JavaScript references: first run JavaScript to see if any of the HTML markup has changed, then applies CSS, finally leave JavaScript run
