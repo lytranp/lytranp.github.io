@@ -52,7 +52,7 @@ Let's say class "BankAccountMain.java" wants to call the variable "test" from "B
 
 ![](/sources/Programming-types-variable-method-java3.png){:height="60%" width="60%"}
 
-![](Programming-types-variable-method-java4.png){:height="60%" width="60%"}
+![](/sources/Programming-types-variable-method-java4.png){:height="60%" width="60%"}
 
 *Types of variable*
 
