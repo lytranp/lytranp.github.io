@@ -13,9 +13,9 @@ date: 2020-11-12
 
 Website loads the browser, you can read, view or listen to the content. What really happens?
 
-a. Address bar: 
-* Filled with a URL
-* A locator following a universal standard that points a specific resource on the web and that resource is the document you are trying to access. Besides, that resource is a server connected to the internet and its IP address is mapped to the domain you used in a DNS 
+**Address bar**:
++ Filled with a URL
++ A locator following a universal standard that points a specific resource on the web and that resource is the document you are trying to access. Besides, that resource is a server connected to the internet and its IP address is mapped to the domain you used in a DNS 
   
 b. Process
 
