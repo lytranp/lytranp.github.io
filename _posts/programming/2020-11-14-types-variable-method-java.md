@@ -96,7 +96,7 @@ Let's say class "BankAccountMain.java" wants to call the variable "test" from "B
 
   + Usage: It is called directly from class (without having to initialize object)
 
->```                               Airplane.aircraftCount;               ```
+>```                               AirPlane.aircraftCount;               ```
 
 
 ## 2. Function/Method
