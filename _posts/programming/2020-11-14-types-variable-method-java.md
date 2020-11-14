@@ -17,7 +17,7 @@ Declaring variables and methods in Java might be confusing. That is the reason t
 
 Access Modifiers + Primitive Data Type + Variable name
 
-                ```private int volumeLevel = 1;```
+>```private int volumeLevel = 1;```
 
 *Primitive Data Type*: byte, short, int, long, float, double, boolean, char
 
@@ -32,11 +32,12 @@ Here is the structure of a package. In a package, there are many classes. For ex
 
 Let's in class "BankAccount.java", we declare a variable
 
-```
-                    int test = 10; (a)
-                    private int test1 = 10; (b)
-                    public int test2 = 10; (c)
-```
+```int test = 10; (a)```
+
+```private int test1 = 10; (b)```
+
+```public int test2 = 10; (c)```
+
 
 Let's say class "BankAccountMain.java" wants to call the variable "test" from "BankAccount.java"
 
@@ -67,7 +68,7 @@ Let's say class "BankAccountMain.java" wants to call the variable "test" from "B
   
   + Usage: It is called directly in this function. 
    
-                    ```System.out.println(divisor);```
+>```System.out.println(divisor);```
   
 ![](/sources/Programming-types-variable-method-java6.png){:height="60%" width="60%"}
 
