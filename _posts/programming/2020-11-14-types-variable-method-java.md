@@ -99,7 +99,7 @@ Access Modifiers + Primitive Data Type + Function name ()
 
 > public boolean deposit(double amount)
 > 
-*Access Modifiers: remain true to functions and methods
+**Access Modifiers*: remain true to functions and methods
 
 **b. Call function/method**
 
