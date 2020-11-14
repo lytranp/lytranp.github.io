@@ -17,7 +17,7 @@ Declaring variables and methods in Java might be confusing. That is the reason t
 
 Access Modifiers + Primitive Data Type + Variable name
 
->               	**private int volumeLevel = 1;**
+>private int volumeLevel = 1;
 
 *Primitive Data Type*: byte, short, int, long, float, double, boolean, char
 
@@ -32,9 +32,9 @@ Here is the structure of a package. In a package, there are many classes. For ex
 
 Let's in class "BankAccount.java", we declare a variable
 
-> 	                 int test = 10; (a)
-> 	                 private int test1 = 10; (b)
->                    public int test2 = 10; (c)
+>int test = 10; (a)
+>private int test1 = 10; (b)
+>public int test2 = 10; (c)
 
 Let's say class "BankAccountMain.java" wants to call the variable "test" from "BankAccount.java"
 
@@ -64,7 +64,7 @@ Let's say class "BankAccountMain.java" wants to call the variable "test" from "B
   + In the function "isPrime", divisor is a local variable that only works within this function. So, it is not necessary to declare private, or public. 
   
   + Usage: It is called directly in this function. 
->                   System.out.println(divisor);
+>System.out.println(divisor);
   
 ![](/sources/Programming-types-variable-method-java6.png){:height="60%" width="60%"}
 
@@ -74,13 +74,13 @@ Let's say class "BankAccountMain.java" wants to call the variable "test" from "B
 
   + Usage: It is called through object. Meaning that we have to initialize the object first, then we can call instance variable
 
-> Airplane newAirplane = new Airplane("AIRBUS", 320);	
->
+> Airplane newAirplane = new Airplane("AIRBUS", 320);
+> 
 > newAirplane.model;
 
 *Note*: Because model is private, so it can not be called outside of class. Actually, it should be called through a method of class "getModel()"
 
->newAirplane.getModel();
+```newAirplane.getModel();```
 
 ![](/sources/Programming-types-variable-method-java7.png){:height="60%" width="60%"}
 
@@ -105,13 +105,13 @@ Access Modifiers + Primitive Data Type + Function name ()
 
 + Instance method: Firstly, we also have to initialize object. Then, we call method through object
 
-> newAirplane.getModel();
+```newAirplane.getModel();```
 
 + Static method: We can call methods and functions directly from Class "AirPlane" (or call through object).
 
 > ![](/sources/Programming-types-variable-method-java8.png){:height="60%" width="60%"}
 
-> AirPlane.getAircraftCount(); or newAirplane.getAircraftCount();
+>``` AirPlane.getAircraftCount(); or newAirplane.getAircraftCount();```
 
 
 
