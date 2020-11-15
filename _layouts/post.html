@@ -17,29 +17,17 @@ layout: default
 	
 		{% include mathjax.html %}
 
-<style type="text/css">
-
-textarea {
-width: 100px;
-height: 1em;
-}
-
-input, select, textarea {
-font-size: 50%;
-}
-
-</style>
-
 		<time>{{ page.date | date: '%B %-d, %Y' }} &nbsp; | &nbsp;
 			{% if page.path contains '_posts' %}
 			{{page.read}} minute read &nbsp; | &nbsp; Ly Tran
 			{% endif %}
 		</time>
 
-	<div class="divider"></div>
+	<div class="entry-content">
 
 	{{ content }}
-
+		
+	</div>
 </article>
 
 <div class="back">
