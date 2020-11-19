@@ -2,9 +2,9 @@
 layout: post
 mathjax: true
 title: "Decision Tree - Gini Index!"
-read: 5
+read: 15
 secondary: datamining
-date: 2020-11-21
+date: 2020-11-18
 ---
 
 ## 1. Case study 
