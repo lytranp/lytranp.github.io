@@ -2,7 +2,7 @@
 layout: post
 title: "Ensemble Methods!"
 read: 15
-secondary: others
+secondary: datamining
 date: 2020-11-18
 ---
 
