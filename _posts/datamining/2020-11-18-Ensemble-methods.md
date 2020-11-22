@@ -43,3 +43,14 @@ Some widely known methods of ensemble: voting, stacking, bagging and boosting
   + Simple averaging: the average predictions are calculated. This method reduces over-fit and creates a smoother regression model.
   
   + Weighted averaging: prediction of each model is multiplied by the weight and then their average is calculated.
+
+**Stacking**
+
+We have base algorithms (logistic regression, decision tree...)
+
+-> Train these base algorithms with training dataset 
+
+-> After training, predict back on training dataset and test set. Meaning that we will have new training dataset and new test set from prediction
+
+-> Train combiner machine learning algorithm on new training dataset and predict on new test set
+
