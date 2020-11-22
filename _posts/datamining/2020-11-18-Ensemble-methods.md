@@ -54,3 +54,22 @@ We have base algorithms (logistic regression, decision tree...)
 
 -> Train combiner machine learning algorithm on new training dataset and predict on new test set
 
+**Bagging (Bootstrap)**
+
+First step: create multiple models using the same algorithm with random sub-samples of dataset which are drawn from the original dataset randomly using bootstrap sampling method. *In bagging, each sub-samples can be generated independently from each other. So, generation and training can be done in parallel.*
+
+>*Bootstrap sampling method:* generate additional data randomly with replacement -> some observations appears more than once in each new training dataset whereas some other observations are not present in the sample
+
+Second step: aggregate the generated models using voting or averaging
+
+
+**Boosting**
+
+Training each model with the same dataset but in a sequential way and so, can not use parallel operations (unlike baggaging).
+
+After each training step, weights of instances are adjusted according to the error of the last prediction. Misclassified data increases its weights to emphasie the most difficult instances.
+
+-------------
+**Reference** 
+
+https://www.toptal.com/machine-learning/ensemble-methods-machine-learning#:~:text=Ensemble%20methods%20are%20techniques%20that,winning%20solutions%20used%20ensemble%20methods.
