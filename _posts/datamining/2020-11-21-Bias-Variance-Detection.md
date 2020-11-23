@@ -51,7 +51,9 @@ When parameter is really big (eg. degree = 10), the training error is low but th
 ***Diagnose bias or variance from validation curve***
 
 - In the region where both training error and validation error are high: model has high bias (underfitting) because the model can not learn from the data that leads to perform poorly
+  
 - In the middle region where both training error and validation error decrease: degree of parameter seems to be the best
+  
 - In the region where training error keeps staying low while validation error increases: it is effects of high variance (overfitting). Training error is low because the model is complex and it learns too much from training instances. But it can not generalize well to new data. As a result, validation error increases.
 
 
@@ -73,6 +75,7 @@ When size of training set is 1, MSE for training set is 0. This makes sense beca
 ***Diagnose bias or variance from learning curve***
 
 - If training error is very low: means that training data is fitted very well -> it has low bias and likely to be high variance.
+  
 - If training error is high: means that training data is not fitted well enough -> it has high bias and likely to be low variance
 
 - If model has high bias: we will observe fairly quick convergence to a high error for both validation and training datasets. (Model has high training error -> high bias. At the same time, although validation error decreases when training set size increases, it does not keep decreasing any more. Validation error stays as high as training error, meaning that model can not predict well new datasets.)
