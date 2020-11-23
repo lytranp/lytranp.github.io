@@ -22,7 +22,7 @@ If we want low variance to avoid overly complex model -> likely that model is to
 
 =>We need to accept a trade-off. We can not have both low bias and low variance, so we want to aim for something in the middle.
 
-![](2020-11-22-19-24-14.png){:height="60%" width="60%"}
+![](/sources/Bias-Variance-Detection.png){:height="60%" width="60%"}
 
 
 ## 4. Common tools to diagnose high bias or high variance
@@ -35,7 +35,7 @@ The parameters of model have some degree of control over the model's complexity 
 
 On this curve, we plot both training error and validation error of the model. 
 
-![](2020-11-22-14-46-07.png){:height="60%" width="60%"}
+![](/sources/Bias-Variance-Detection1.png){:height="60%" width="60%"}
 
 
 >*Interpretation:* 
@@ -46,7 +46,7 @@ When parameter increased -> training error and validation error decreased althou
 
 When parameter is really big (eg. degree = 10), the training error is low but the model does not generalize well (overfit) -> it performs poorly on new test data -> validation error increased. The last graph illustrated this. 
 
-![](2020-11-22-14-50-16.png){:height="60%" width="60%"}
+![](/sources/Bias-Variance-Detection2.png){:height="60%" width="60%"}
 
 ***Diagnose bias or variance from validation curve***
 
@@ -58,11 +58,11 @@ When parameter is really big (eg. degree = 10), the training error is low but th
 ### b. **Learning curve**
 We plot error of a model as function of number of training examples. We will plot the error for both the training data and validation data
 
-![](2020-11-22-19-40-12.png){:height="60%" width="60%"}
+![](/sources/Bias-Variance-Detection3.png){:height="60%" width="60%"}
 
 Learning curve for linear regression 
 
-![](2020-11-22-19-27-46.png){:height="60%" width="60%"}
+![](/sources/Bias-Variance-Detection4.png){:height="60%" width="60%"}
 
 >*Interpretation:* 
 
@@ -77,14 +77,21 @@ When size of training set is 1, MSE for training set is 0. This makes sense beca
 
 - If model has high bias: we will observe fairly quick convergence to a high error for both validation and training datasets. (Model has high training error -> high bias. At the same time, although validation error decreases when training set size increases, it does not keep decreasing any more. Validation error stays as high as training error, meaning that model can not predict well new datasets.)
 
-![](2020-11-22-23-16-29.png){:height="60%" width="60%"}
+![](/sources/Bias-Variance-Detection5.png){:height="60%" width="60%"}
 
-![](2020-11-22-23-18-10.png){:height="60%" width="60%"}
+![](/sources/Bias-Variance-Detection6.png){:height="60%" width="60%"}
 
 - As we can see, from around 500 training data points onward, validation MSE stays roughly the same -> Adding more training data points won't lead to significantly better models. We should switch to an algorithm that can build more complex models or add more features to increase the complexity of current model. 
 
 - Variance: examine gap between the validation learning curve and training learning curve: narrow gap indicates low variance; wider gap indicates higher variance. The reason is because if model fits training data too well -> training error will be low but validation error will be high -> gap between training and validation learning curve determines how high variance is
   
-![](2020-11-22-23-44-33.png){:height="60%" width="60%"}
+![](/sources/Bias-Variance-Detection7.png){:height="60%" width="60%"}
 
-![](2020-11-22-23-56-19.png){:height="60%" width="60%"}
+![](/sources/Bias-Variance-Detection8.png){:height="60%" width="60%"}
+
+-------------
+**Reference** 
+
+https://www.jeremyjordan.me/evaluating-a-machine-learning-model/
+
+https://www.dataquest.io/blog/learning-curves-machine-learning/
