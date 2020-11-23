@@ -48,10 +48,43 @@ When parameter is really big (eg. degree = 10), the training error is low but th
 
 ![](2020-11-22-14-50-16.png){:height="60%" width="60%"}
 
+***Diagnose bias or variance from validation curve***
+
+- In the region where both training error and validation error are high: model has high bias (underfitting) because the model can not learn from the data that leads to perform poorly
+- In the middle region where both training error and validation error decrease: degree of parameter seems to be the best
+- In the region where training error keeps staying low while validation error increases: it is effects of high variance (overfitting). Training error is low because the model is complex and it learns too much from training instances. But it can not generalize well to new data. As a result, validation error increases.
+
+
 ### b. **Learning curve**
 We plot error of a model as function of number of training examples. We will plot the error for both the training data and validation data
 
+![](2020-11-22-19-40-12.png){:height="60%" width="60%"}
+
+Learning curve for linear regression 
+
 ![](2020-11-22-19-27-46.png){:height="60%" width="60%"}
 
->*Interpretation:* When size of training set is 1, MSE for training set is 0. This makes sense because model has no problem to train and fit perfectly a single data point. So, prediction on training set with size = 1 is perfect. However, using this trained model on 1 instance to predict validation set (which has 1999 instances), MSE is extremely high. This makes sense again because no way a model trained on a single data point can generalize accurately to 1999 new instances it has not seen in training. 
+>*Interpretation:* 
 
+When size of training set is 1, MSE for training set is 0. This makes sense because model has no problem to train and fit perfectly a single data point. So, prediction on training set with size = 1 is perfect. However, using this trained model on 1 instance to predict validation set (which has 1999 instances), MSE is extremely high. This makes sense again because no way a model trained on a single data point can generalize accurately to 1999 new instances that it has not seen in training. 
+
+=> When size of training set increase to 1000, the training MSE increases because it is hard to have a model predict accurately many instances. At the same time, because it trains on many instances, it can learn well and can predict well new data. Therefore, validation MSE decreases sharply. 
+
+***Diagnose bias or variance from learning curve***
+
+- If training error is very low: means that training data is fitted very well -> it has low bias and likely to be high variance.
+- If training error is high: means that training data is not fitted well enough -> it has high bias and likely to be low variance
+
+- If model has high bias: we will observe fairly quick convergence to a high error for both validation and training datasets. (Model has high training error -> high bias. At the same time, although validation error decreases when training set size increases, it does not keep decreasing any more. Validation error stays as high as training error, meaning that model can not predict well new datasets.)
+
+![](2020-11-22-23-16-29.png){:height="60%" width="60%"}
+
+![](2020-11-22-23-18-10.png){:height="60%" width="60%"}
+
+- As we can see, from around 500 training data points onward, validation MSE stays roughly the same -> Adding more training data points won't lead to significantly better models. We should switch to an algorithm that can build more complex models or add more features to increase the complexity of current model. 
+
+- Variance: examine gap between the validation learning curve and training learning curve: narrow gap indicates low variance; wider gap indicates higher variance. The reason is because if model fits training data too well -> training error will be low but validation error will be high -> gap between training and validation learning curve determines how high variance is
+  
+![](2020-11-22-23-44-33.png){:height="60%" width="60%"}
+
+![](2020-11-22-23-56-19.png){:height="60%" width="60%"}
