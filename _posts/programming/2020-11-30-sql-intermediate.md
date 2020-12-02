@@ -8,8 +8,13 @@ date: 2020-11-30
 ---
 
 ### 1. CASE statements
-
 ![](sql-intermediate.png){:height="60%" width="60%"}
+
+![](sql-intermediate3.png){:height="60%" width="60%"}
+
+![](sql-intermediate4.png){:height="60%" width="60%"}
+
+a. CASE - basic
 
 ```-sql
 SELECT 
@@ -23,6 +28,7 @@ GROUP BY home_teams;
 ```
 ![](sql-intermediate2.png){:height="60%" width="60%"}
 
+b. CASE - compare column values
 ```-sql
 SELECT 
 	-- Select the date of the match
@@ -32,4 +38,28 @@ SELECT
         WHEN home_goal < away_goal THEN 'Home loss :(' 
         ELSE 'Tie' END AS outcome
 FROM matches_spain;
+```
+
+Note: 
+
+Table **teams_spain**: 
+
+    + Information of away team
+    + team_api_id: match with **awayteam_id** of table **matches_spain**
+
+Table **teams_spain**: 
+
+    + Information of match between **hometeam_id** and **awayteam_id**
+
+```-sql
+SELECT m.date
+       ,t.team_long_name AS opponent
+       ,CASE WHEN m.home_goal > away_goal THEN 'Barcelona win!'
+            WHEN m.home_goal > away_goal THEN 'Barcelona loss'
+        ELSE 'Tie' END AS outcome
+FROM matches_spain AS m
+LEFT JOIN teams_spain AS t
+ON m.awayteam_id = t.team_api_id
+-- Filter for Barcelona as the home team
+WHERE m.hometeam_id = 8634;
 ```
