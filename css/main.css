@@ -46,9 +46,3 @@ ul.posts li {
 .entry-content p {
  font-size: 18px; line-height: 27px;
  }
-
-highlight {
-    margin: 0;
-    font-size: .8125em;  /* was $type-size-7 */
-    line-height: 1.8;
-  }
