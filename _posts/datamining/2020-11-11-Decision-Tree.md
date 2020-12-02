@@ -23,8 +23,6 @@ Question: How to know which candidate we will choose to do root node. If so, wha
 
 ![](/sources/DataMining-DecisionTree2.png){:height="60%" width="60%"}
 
-![](/sources/DataMining-DecisionTree2.png){:height="60%" width="60%"}
-
 Start with candidate "Weight": Because weight is numeric, we will use all of distinct values as splitting value. 
 
 At each distinct value, we will compare <= 40; <= 50
