@@ -1,7 +1,7 @@
 ---
 layout: post
 mathjax: true
-title: "Decision Tree - Gini Index!"
+title: "Decision Tree - Part 2 ! "
 read: 15
 secondary: datamining
 date: 2020-11-18
