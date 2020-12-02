@@ -6,7 +6,7 @@
 .post-content > .highlight {
   background: #282C34;
   border-radius: 6px;
-  font-size: 0.8125em;
+  font-size: $type-size-4;
   -webkit-font-smoothing: subpixel-antialiased;
   width: 100%;
 }
@@ -81,7 +81,7 @@
   line-height: 1;
   overflow-x: scroll;
   padding: 10px;
-  font-size: .8125em;
+  font-size: $type-size-4;
 
   pre {
     margin: 0;
