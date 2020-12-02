@@ -30,10 +30,6 @@ At each distinct value, we will compare <= 40; <= 50
 ![](/sources/DataMining-DecisionTree3.png){:height="60%" width="60%"}
 
 ![](/sources/DataMining-DecisionTree4.png){:height="60%" width="60%"}
-=======
-![](/sources/DataMining-DecisionTree3.png){:height="60%" width="60%"}
-
-![](/sources/DataMining-DecisionTree4.png){:height="60%" width="60%"}
 
 **Step 2**: Evaluate splits
 
