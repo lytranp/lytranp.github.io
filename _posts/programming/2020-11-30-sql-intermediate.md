@@ -39,9 +39,7 @@ SELECT
         ELSE 'Tie' END AS outcome
 FROM matches_spain;
 ```
-
-Note: 
-
+ 
 Table **teams_spain**: 
 + Information of away team
 + team_api_id: match with **awayteam_id** of table **matches_spain**
@@ -61,3 +59,40 @@ ON m.awayteam_id = t.team_api_id
 -- Filter for Barcelona as the home team
 WHERE m.hometeam_id = 8634;
 ```
+
+*Problem*: List matches between FC Barcelona(id = 8634) and Real Madrid CF (id = 8633)
+
+```-sql
+SELECT date
+       ,CASE WHEN hometeam_id = 8634 THEN 'FC Barcelona'
+             WHEN hometeam_id = 8633 THEN 'Real Madrid CF'
+        ELSE 'Tie' END AS home
+        ,CASE WHEN awayteam_id = 8634 THEN 'FC Barcelona'
+             WHEN awayteam_id = 8633 THEN 'Real Madrid CF'
+        ELSE 'Tie' END AS away
+FROM matches_spain
+--Condition: hard because just want to filter Barcelona with Real (and vice versa), not Barcelona with other teams
+WHERE (hometeam_id = 8634 OR awayteam_id = 8634)
+AND (awayteam_id = 8633 OR hometeam_id = 8633);
+```
+![](sql-intermediate5.png){:height="60%" width="60%"}
+
+*Problem*: improve a bit from above problem 
+```-sql
+SELECT date
+       ,CASE WHEN hometeam_id = 8634 THEN 'FC Barcelona'
+             WHEN hometeam_id = 8633 THEN 'Real Madrid CF'
+        ELSE 'Tie' END AS home
+        ,CASE WHEN awayteam_id = 8634 THEN 'FC Barcelona'
+             WHEN awayteam_id = 8633 THEN 'Real Madrid CF'
+        ELSE 'Tie' END AS away
+        ,CASE WHEN home_goal > away_goal AND hometeam_id = 8634 THEN 'Barcelona wins'
+            WHEN home_goal > away_goal AND hometeam_id = 8633 THEN 'Real Madrid win!'
+            WHEN home_goal < away_goal AND awayteam_id = 8634 THEN 'Barcelona wins'
+            WHEN home_goal < away_goal AND awayteam_id = 8633 THEN 'Real Madrid win!'
+        ELSE 'Tie' END AS outcome
+FROM matches_spain
+WHERE (hometeam_id = 8634 OR awayteam_id = 8634)
+AND (awayteam_id = 8633 OR hometeam_id = 8633);
+```
+![](sql-intermediate6.png){:height="60%" width="60%"}
