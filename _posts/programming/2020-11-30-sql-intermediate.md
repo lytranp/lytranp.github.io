@@ -14,7 +14,7 @@ date: 2020-11-30
 
 ![](sql-intermediate4.png){:height="60%" width="60%"}
 
-a. CASE - basic
+**a. CASE - basic**
 
 ```-sql
 SELECT 
@@ -28,7 +28,8 @@ GROUP BY home_teams;
 ```
 ![](sql-intermediate2.png){:height="60%" width="60%"}
 
-b. CASE - compare column values
+**b. CASE - compare column values**
+
 ```-sql
 SELECT 
 	-- Select the date of the match
@@ -96,3 +97,51 @@ WHERE (hometeam_id = 8634 OR awayteam_id = 8634)
 AND (awayteam_id = 8633 OR hometeam_id = 8633);
 ```
 ![](sql-intermediate6.png){:height="60%" width="60%"}
+
+**c. Filter CASE**
+
+Example
+
+Step 1: Filter team = 'Bologna'
+
+```sql
+SELECT
+	team_long_name,
+	team_api_id
+FROM teams_italy
+WHERE team_long_name = 'Bologna';
+```
+
+Step 2: Identify when Bologna won a match
+
+```sql
+SELECT
+	season,
+	date,
+    CASE WHEN hometeam_id = 9857 AND home_goal > away_goal THEN 'Bologna Win'
+        WHEN awayteam_id = 9857 AND away_goal > home_goal THEN 'Bologna Win'
+    END AS outcome
+FROM matches_italy;
+```
+![](sql-intermediate7.png){:height="60%" width="60%"}
+
+
+Step 3: Filter outcome "Bologna wins"
+
+```sql
+SELECT
+	season,
+	date,
+    home_goal,
+    away_goal,
+    CASE WHEN hometeam_id = 9857 AND home_goal > away_goal THEN 'Bologna Win'
+        WHEN awayteam_id = 9857 AND away_goal > home_goal THEN 'Bologna Win'
+    END AS outcome
+FROM matches_italy
+WHERE
+    (CASE WHEN hometeam_id = 9857 AND home_goal > away_goal THEN 'Bologna Win'
+        WHEN awayteam_id = 9857 AND away_goal > home_goal THEN 'Bologna Win'
+    END) IS NOT NULL;
+```
+![](sql-intermediate8.png){:height="60%" width="60%"}
+
