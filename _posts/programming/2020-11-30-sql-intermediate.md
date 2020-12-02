@@ -43,13 +43,11 @@ FROM matches_spain;
 Note: 
 
 Table **teams_spain**: 
-
-    + Information of away team
-    + team_api_id: match with **awayteam_id** of table **matches_spain**
++ Information of away team
++ team_api_id: match with **awayteam_id** of table **matches_spain**
 
 Table **teams_spain**: 
-
-    + Information of match between **hometeam_id** and **awayteam_id**
++ Information of match between **hometeam_id** and **awayteam_id**
 
 ```-sql
 SELECT m.date
