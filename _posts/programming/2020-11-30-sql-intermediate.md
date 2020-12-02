@@ -145,3 +145,56 @@ WHERE
 ```
 ![](sql-intermediate8.png){:height="60%" width="60%"}
 
+d. CASE with aggregate function 
+
+*Problem*: Count games in the 2012/2013 season
+
+```sql
+SELECT season,
+	COUNT(CASE WHEN m.season = '2012/2013' 
+        	THEN m.id ELSE NULL END) AS matches_2012_2013
+FROM match AS m
+GROUP BY season;
+```
+
+*Problem*: Count games in the 2012/2013, 2013/2014 season
+
+```sql
+SELECT c.name,
+	COUNT(CASE WHEN m.season = '2012/2013' 
+        	THEN m.id ELSE NULL END) AS matches_2012_2013
+    ,COUNT(CASE WHEN m.season = '2013/2014'
+            THEN m.id END) AS matches_2013_2014
+FROM match AS m
+LEFT JOIN country AS c
+ON c.id = m.country_id
+GROUP BY c.name;
+```
+
+E. CASE with aggregate function 
+
+General formula
+```
+AVG(CASE WHEN condition_is_met THEN 1
+         WHEN condition_is_not_met THEN 0 END)
+```
+
+*Problem*: Compute average score of matches in each country and each season
+
+```sql
+SELECT 
+	c.name AS country,
+    -- Calculate the percentage of tied games in each season
+	AVG(CASE WHEN m.season= '2013/2014' AND m.home_goal = m.away_goal THEN 1
+			 WHEN m.season= '2013/2014' AND m.home_goal != m.away_goal THEN 0
+			 END) AS ties_2013_2014,
+	AVG(CASE WHEN m.season= '2014/2015' AND m.home_goal = m.away_goal THEN 1
+			 WHEN m.season= '2014/2015' AND m.home_goal != m.away_goal THEN 0
+			 END) AS ties_2014_2015
+FROM country AS c
+LEFT JOIN matches AS m
+ON c.id = m.country_id
+GROUP BY country;
+```
+
+![](sql-intermediate9.png){:height="60%" width="60%"}
