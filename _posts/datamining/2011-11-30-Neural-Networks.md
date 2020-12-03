@@ -51,7 +51,13 @@ Neural networks are models for classification and prediction; also can used for 
 
   - To compute output of a hidden layer node: compute a weighted sum of inputs and apply a certain function to it. 
 
-  - Weighted sum: s = $\hat{\theta}_j$ + $\displaystyle\sum_{i=1}^p(w_i,_j)$. Because there are p predictors, i will run from 1 to p. $w_1,_j,...w_p,j$ are weights that are **initially sets randomly**. $\hat{\theta}$ is also called the bias of node j, is a constant that controls the level of contribution of node j.
+  - Weighted sum: 
+    
+    s = $\hat{\theta}_j$ + $\displaystyle\sum_{i=1}^p(w_i,_j)$
+    
+    Because there are p predictors, i will run from 1 to p. 
+    
+    $w_1,_j,...w_p,j$ are weights that are **initially sets randomly**. $\hat{\theta}$ is also called the bias of node j, is a constant that controls the level of contribution of node j.
 
   - Next, we take a function g of this weighted sum. Function g is called a transfer function or activation function. Functions might include: linear function [g(s) = $\hat{\theta}$s], exponetial function [g(s) = exp($\hat{\theta}$s)], logistic/sigmoidal function [g(s) = $\frac{1}{1+e^-s}$]
 
