@@ -113,3 +113,9 @@ Very sensitive to small variations in the training data. For example, just after
 *After removing 1 instance*
 
 ![](/sources/datamining-decision-tree-7.png){:height="60%" width="60%"}
+
+------------------
+**References**
+
+Aurelien Geron, Hands-on Machine Learning with Scikit-Learn, Kera & TensorFlow
+
