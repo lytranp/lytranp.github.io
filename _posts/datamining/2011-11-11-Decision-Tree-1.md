@@ -78,7 +78,7 @@ How to choose k and t ? Use CART cost function for classification. Once CART alg
   
 + Parametric model (Linear models): have assumption that data is linear, has pre-determined number of parameters => its degree of freedom is limited => reduce risk of overfitting
 
-To avoid overfitting the training data, we need to restrict Descision Tree's freedom during training: called regularization. Regularization hyperparameters depend on the algorithm used. 
+To avoid overfitting the training data, we need to restrict Decision Tree's freedom during training: called regularization. Regularization hyperparameters depend on the algorithm used. 
 
 Some common hyperparameters for Decision Tree
 + max_depth: default is None, means unlimited

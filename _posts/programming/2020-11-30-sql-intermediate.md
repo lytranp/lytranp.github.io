@@ -1,18 +1,18 @@
 ---
 layout: post
 mathjax: true
-title: "SQL - Intermediate"
+title: "SQL - Intermediate - Part 1"
 read: 15
 secondary: programming
 date: 2020-11-30
 ---
 
 ### 1. CASE statements
-![](sql-intermediate.png){:height="60%" width="60%"}
+![](/sources/sql-intermediate.png){:height="60%" width="60%"}
 
-![](sql-intermediate3.png){:height="60%" width="60%"}
+![](/sources/sql-intermediate3.png){:height="60%" width="60%"}
 
-![](sql-intermediate4.png){:height="60%" width="60%"}
+![](/sources/sql-intermediate4.png){:height="60%" width="60%"}
 
 **a. CASE - basic**
 
@@ -26,7 +26,7 @@ SELECT
 FROM matches_germany
 GROUP BY home_teams;
 ```
-![](sql-intermediate2.png){:height="60%" width="60%"}
+![](/sources/sql-intermediate2.png){:height="60%" width="60%"}
 
 **b. CASE - compare column values**
 
@@ -76,7 +76,7 @@ FROM matches_spain
 WHERE (hometeam_id = 8634 OR awayteam_id = 8634)
 AND (awayteam_id = 8633 OR hometeam_id = 8633);
 ```
-![](sql-intermediate5.png){:height="60%" width="60%"}
+![](/sources/sql-intermediate5.png){:height="60%" width="60%"}
 
 *Problem*: improve a bit from above problem 
 ```-sql
@@ -96,7 +96,7 @@ FROM matches_spain
 WHERE (hometeam_id = 8634 OR awayteam_id = 8634)
 AND (awayteam_id = 8633 OR hometeam_id = 8633);
 ```
-![](sql-intermediate6.png){:height="60%" width="60%"}
+![](/sources/sql-intermediate6.png){:height="60%" width="60%"}
 
 **c. Filter CASE**
 
@@ -123,7 +123,7 @@ SELECT
     END AS outcome
 FROM matches_italy;
 ```
-![](sql-intermediate7.png){:height="60%" width="60%"}
+![](/sources/sql-intermediate7.png){:height="60%" width="60%"}
 
 
 Step 3: Filter outcome "Bologna wins"
@@ -143,7 +143,7 @@ WHERE
         WHEN awayteam_id = 9857 AND away_goal > home_goal THEN 'Bologna Win'
     END) IS NOT NULL;
 ```
-![](sql-intermediate8.png){:height="60%" width="60%"}
+![](/sources/sql-intermediate8.png){:height="60%" width="60%"}
 
 d. CASE with aggregate function 
 
@@ -197,4 +197,6 @@ ON c.id = m.country_id
 GROUP BY country;
 ```
 
-![](sql-intermediate9.png){:height="60%" width="60%"}
+![](/sources/sql-intermediate9.png){:height="60%" width="60%"}
+
+Please read [SQL - Intermediate - Part 2](2011-11-30-sql-intermediate2.md)
