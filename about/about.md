@@ -4,7 +4,8 @@ title: README
 permalink: about
 ---
 ## Fun fact
-I love traveling, playing piano and reading books about finance and business world.
+
+I enjoy traveling, playing piano, cooking, and reading books about finance or business in free time.
 
 I am very good at negotiation skill. Try to make a deal with me ^_^
 
