@@ -2,8 +2,32 @@
 title:              "Ly Tran"
 description:        "Academic Blog."
 
-# Author Info
-author_name:        "Ly Tran"
+# Site Author
+author:
+  name             : "Katerina Bosko, PhD"
+  avatar           : "/assets/images/kbosko-color-small.jpg"
+  bio              : "Data Scientist with background in Social Sciences"
+  location         : "San Francisco Bay Area (CA)"
+  email            :
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:kbosko@cross-validated.com
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/kbosko3"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/k-bosko/"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/k-bosko/"
 
 # Site Settings
 baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
