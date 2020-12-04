@@ -9,4 +9,4 @@ I love unlocking the hidden value of data to support the business to make better
 Like most of people, I love travelling but at the same time, I am family-oriented person.
 My hobby is play piano and reading / learning about finance and business world.
 
-![](landscape.png)
+![](landscape.png){:height="60%" width="60%"}
