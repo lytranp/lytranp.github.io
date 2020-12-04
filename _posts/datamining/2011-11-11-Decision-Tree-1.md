@@ -96,6 +96,7 @@ Some common hyperparameters for Decision Tree
 There are 2 main difference
 
 - Instead of predicting class in each node, it predicts a value
+  
 - Instead of trying to split the training set to minimize impurity, it tries to split to minimize MSE (Below formula of MSE node implies that it expects values in a node are nearly equal)
 
 ![](/sources/datamining-decision-tree-5.png){:height="60%" width="60%"}
