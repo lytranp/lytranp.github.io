@@ -8,7 +8,9 @@ permalink: others
     {% if post.secondary == 'others' %}
  
     <span style="float: right">{{ post.date | date: "%b %d, %Y" }}</span>
-
+    body {
+      background-image: url('background.png');
+    }
       <div class="post">
         <h1 class="post-title">
           <a href="{{ post.url }}">
