@@ -10,12 +10,12 @@ permalink:          /notes/:title # Post permalink
 owner:
   name: Ly Tran
   avatar: me.png
-  bio: "This is a sample Jekyll academic website."
+  bio: 
   email: ly.tran@fulbrightmail.org
   # Do not include the @ symbol in your Twitter username
-  twitter: laderast
+  twitter: 
   linkedin: #username
-  github: laderast
+  github: 
   orcid: # ID Number (ex. 0000-0000-0000-0000)
   researchgate: #username
   mendeley: #username
