@@ -88,9 +88,9 @@ Neural networks are models for classification and prediction; also can used for 
 ### 3. Relation to Linear and Logistic Regression
 a. Formulation
 
-- If a neural network with no hidden layers and a single output node,then  $\hat{Y}$ = g(s) = 
+- If a neural network with no hidden layers and a single output node, then   $\hat{Y}$ = g(s) = 
   
-> $\hat{\theta}_j + \displaystyle\sum_{i=1}^p(w_i,_j)$
+> $$\hat{\theta}_j + \displaystyle\sum_{i=1}^p(w_i,_j)$$
 
 This is exactly equivalent to the formulation of a multiple linear regression. 
 
