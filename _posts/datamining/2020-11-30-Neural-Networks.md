@@ -88,13 +88,13 @@ Neural networks are models for classification and prediction; also can used for 
 ### 3. Relation to Linear and Logistic Regression
 a. Formulation
 
-- If a neural network with no hidden layers and a single output node, then   $\hat{Y}$ = g(s) = 
++ If a neural network with no hidden layers and a single output node, then   $\hat{Y}$ = g(s) = 
   
-> $$\hat{\theta}_j + \displaystyle\sum_{i=1}^p(w_i,_j)$$
+ $$\hat{\theta}_j + \displaystyle\sum_{i=1}^p(w_i,_j)$$
 
 This is exactly equivalent to the formulation of a multiple linear regression. 
 
-- For a binary output variable Y, if g is logistic function, the output is:
++ For a binary output variable Y, if g is logistic function, the output is:
 
 ![](/sources/neural-networks-1-7.png){:height="20%" width="20%"}
 
@@ -126,13 +126,13 @@ where l: learning rate (or weight decay parameter), ranging from 0 to 1, control
 
 There are 2 methods: 
 
-- Case updating: parameter values are updated after each record is run through the network. In our example, the error for the first record = 0.123. Using a learning rate of 0.5, we will update $\hat{\theta}$ and $w_i,_j$ to:
+*Case updating*: parameter values are updated after each record is run through the network. In our example, the error for the first record = 0.123. Using a learning rate of 0.5, we will update $\hat{\theta}$ and $w_i,_j$ to:
 
 ![](/sources/neural-networks-1-10.png){:height="30%" width="30%"}
 
 These new values are next updated after the second record is run through the network, the third and so on, until all records are used. This is called one epoch. 
 
-- Batch updating*: the entire training set is run through the network and the error $err_k$ is the sum of the errors from all records. After that, use this error to update the bias and weights as formula.
+*Batch updating**: the entire training set is run through the network and the error $err_k$ is the sum of the errors from all records. After that, use this error to update the bias and weights as formula.
 
 ### 6. When does the updating stop ?
 
@@ -150,7 +150,7 @@ Neural network can easily overfit the data, causing error rate on validation dat
 
 => Need to limit the number of training iterations
 
-In classification and regression trees: overfitting can be detected by exammining the performance on validation set or better on a cross-validation set. When validation/cross-validation increases while training set performance is still improving, it is the sign of overfitting. Please read more [Bias-Variance-Detection](https://github.com/lytranp/lytranp.github.io/_posts/datamining/2020-11-21-Bias-Variance-Detection.md)
+In classification and regression trees: overfitting can be detected by exammining the performance on validation set or better on a cross-validation set. When validation/cross-validation increases while training set performance is still improving, it is the sign of overfitting. Please read more [Bias-Variance-Detection](https://lytranp.github.io/notes/Bias-Variance-Detection)
 
 -----------
 **References**
