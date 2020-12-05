@@ -90,7 +90,7 @@ a. Formulation
 
 - If a neural network with no hidden layers and a single output node,then 
   
-  $\hat{Y}$ = g(s) = $\hat{\theta}_j$ + $\displaystyle\sum_{i=1}^p(w_i,_j)$
+  $\hat{Y} = g(s) = \hat{\theta}_j + \displaystyle\sum_{i=1}^p(w_i,_j)$
 
 This is exactly equivalent to the formulation of a multiple linear regression. 
 
@@ -150,7 +150,7 @@ Neural network can easily overfit the data, causing error rate on validation dat
 
 => Need to limit the number of training iterations
 
-In classification and regression trees: overfitting can be detected by exammining the performance on validation set or better on a cross-validation set. When validation/cross-validation increases while training set performance is still improving, it is the sign of overfitting. Please read more [Bias-Variance-Detection](https://lytranp.github.io/../../2020-11-21-Bias-Variance-Detection.md)
+In classification and regression trees: overfitting can be detected by exammining the performance on validation set or better on a cross-validation set. When validation/cross-validation increases while training set performance is still improving, it is the sign of overfitting. Please read more [Bias-Variance-Detection](https://lytranp.github.io/_posts/datamining/2020-11-21-Bias-Variance-Detection.md)
 
 -----------
 **References**
