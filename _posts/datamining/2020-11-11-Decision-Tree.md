@@ -7,7 +7,7 @@ secondary: datamining
 date: 2020-11-18
 ---
 
-please read [Decision Tree - Part 1](2020-11-11-Decision-Tree-1.md) 
+Please read [Decision Tree - Part 1](https://lytranp.github.io/notes/Decision-Tree-1)
 
 ## 1. Case study 
 

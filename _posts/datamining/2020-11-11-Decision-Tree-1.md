@@ -68,7 +68,7 @@ How to choose k and t ? Use CART cost function for classification. Once CART alg
 
 **Conclusion**
 
-+ Use CART algorithm to choose splitting value (by comparing GINI final at each node) as [Decision Tree - Part 2](2011-11-11-Decision-Tree.md)
++ Use CART algorithm to choose splitting value (by comparing GINI final at each node) as [Decision Tree - Part 2](https://lytranp.github.io/notes/Decision-Tree)
   
 + After having splitting value, we can compute GINI in each node to know if it is pure node and estimate class probability to see what class instance belongs to if stop there. 
 
