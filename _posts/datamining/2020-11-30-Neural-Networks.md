@@ -51,7 +51,9 @@ Neural networks are models for classification and prediction; also can used for 
 
   - To compute output of a hidden layer node: compute a weighted sum of inputs and apply a certain function to it. 
 
-  - Weighted sum: s = $\hat{\theta}_j$ + $\displaystyle\sum_{i=1}^p(w_i,_j)$
+  - Weighted sum: s 
+  
+    > $$\hat{\theta}_j+ \displaystyle\sum_{i=1}^p(w_i,_j)$$
     
     Because there are p predictors, i will run from 1 to p. 
     
@@ -148,7 +150,7 @@ Neural network can easily overfit the data, causing error rate on validation dat
 
 => Need to limit the number of training iterations
 
-In classification and regression trees: overfitting can be detected by exammining the performance on validation set or better on a cross-validation set. When validation/cross-validation increases while training set performance is still improving, it is the sign of overfitting. Please read more [Bias-Variance-Detection](/notes/2020-11-21-Bias-Variance-Detection.md)
+In classification and regression trees: overfitting can be detected by exammining the performance on validation set or better on a cross-validation set. When validation/cross-validation increases while training set performance is still improving, it is the sign of overfitting. Please read more [Bias-Variance-Detection](https://lytranp.github.io/../../2020-11-21-Bias-Variance-Detection.md)
 
 -----------
 **References**
