@@ -51,9 +51,7 @@ Neural networks are models for classification and prediction; also can used for 
 
   - To compute output of a hidden layer node: compute a weighted sum of inputs and apply a certain function to it. 
 
-  - Weighted sum: 
-    
-    s = $\hat{\theta}_j$ + $\displaystyle\sum_{i=1}^p(w_i,_j)$
+  - Weighted sum: s = $\hat{\theta}_j$ + $\displaystyle\sum_{i=1}^p(w_i,_j)$
     
     Because there are p predictors, i will run from 1 to p. 
     
@@ -63,7 +61,7 @@ Neural networks are models for classification and prediction; also can used for 
 
   - If we choose logistic activation function, the output of node j in the hidden layer is
 
-    ![](/sources/neural-networks-1-4.png){:height="60%" width="60%"}
+    ![](/sources/neural-networks-1-4.png){:height="40%" width="40%"}
 
   - $\hat{\theta_j}$ and $w_i,_j$: assigned randomly in the first round of training, very small, around zero. Suppose that initial bias and weights for node N3 are: $\hat{\theta_3}$ = -0.3; $w_1,_3$ = 0.05; $w_2,_3$ = 0.01. Plug these numbers into logistic function, we can compute the output of node N3 in the hidden layer
 
@@ -126,13 +124,13 @@ where l: learning rate (or weight decay parameter), ranging from 0 to 1, control
 
 There are 2 methods: 
 
-+ *Case updating*: parameter values are updated after each record is run through the network. In our example, the error for the first record = 0.123. Using a learning rate of 0.5, we will update $\hat{\theta}$ and $w_i,_j$ to:
+- Case updating: parameter values are updated after each record is run through the network. In our example, the error for the first record = 0.123. Using a learning rate of 0.5, we will update $\hat{\theta}$ and $w_i,_j$ to:
 
 ![](/sources/neural-networks-1-10.png){:height="30%" width="30%"}
 
 These new values are next updated after the second record is run through the network, the third and so on, until all records are used. This is called one epoch. 
 
-+ *Batch updating*: the entire training set is run through the network and the error $err_k$ is the sum of the errors from all records. After that, use this error to update the bias and weights as formula.
+- Batch updating*: the entire training set is run through the network and the error $err_k$ is the sum of the errors from all records. After that, use this error to update the bias and weights as formula.
 
 ### 6. When does the updating stop ?
 
@@ -150,7 +148,7 @@ Neural network can easily overfit the data, causing error rate on validation dat
 
 => Need to limit the number of training iterations
 
-In classification and regression trees: overfitting can be detected by exammining the performance on validation set or better on a cross-validation set. When validation/cross-validation increases while training set performance is still improving, it is the sign of overfitting. Please read more [Bias-Variance-Detection](2020-11-21-Bias-Variance-Detection.md)
+In classification and regression trees: overfitting can be detected by exammining the performance on validation set or better on a cross-validation set. When validation/cross-validation increases while training set performance is still improving, it is the sign of overfitting. Please read more [Bias-Variance-Detection](/notes/2020-11-21-Bias-Variance-Detection.md)
 
 -----------
 **References**

@@ -72,4 +72,4 @@ After each training step, weights of instances are adjusted according to the err
 -------------
 **Reference** 
 
-https://www.toptal.com/machine-learning/ensemble-methods-machine-learning#:~:text=Ensemble%20methods%20are%20techniques%20that,winning%20solutions%20used%20ensemble%20methods.
+https://www.toptal.com/machine-learning/ensemble-methods-machine-learning
