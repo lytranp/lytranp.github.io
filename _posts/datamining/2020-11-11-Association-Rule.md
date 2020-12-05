@@ -1,10 +1,10 @@
 ---
 layout: post
 mathjax: true
-title: "Association Rule - Market Basket Analysis "
+title: "Association Rule - Market Basket Analysis - Part 1 "
 read: 15
 secondary: datamining
-date: 2020-11-18
+date: 2020-12-05
 ---
 ### 1. Affinity analysis (or Market basket analysis)
 
@@ -12,7 +12,7 @@ date: 2020-11-18
   
 - Association rules take the form "If antecedent, then consequent"
 
-![](association-rule1.png)){:height="40%" width="40%"}
+![](association-rule1.png){:height="40%" width="40%"}
 
 - Itemset is the list of all the items in the antecedent and the consequent
 
@@ -34,42 +34,76 @@ date: 2020-11-18
 
   - 2-itemsetD = {shampoo, milk}
 
-***SUPPORT*** metric = $\frac{Transaction containing X}{Total transaction}$
+a. ***SUPPORT*** metric
 
+- The ratio of total transactions containing X and total transactions. Here, X can be 1-itemset or k-itemset.  
 
+![](association-rule2.png){:height="30%" width="30%"}
 
+- **SUPPORT** of 2-itemsetC = {Total transactions containing bread and milk} / Total transactions of supermarket on Sat = 50/1,000 = 0.05
 
-Example 1:
+=> Itemset containing bread and milk occur 50 times out of a total of 1,000 transaction. If an itemset has very low **SUPPORT**, we do not enough information on the relationship between its item and so, no conclusions can be drawn from such a rule.
 
-- 1000 customers shopping today
+b. ***CONFIDENCE*** metric
+
+- For 2-itemsetC = {bread, milk}, check association from {bread} -> {milk}: Out of 100 customers bought bread, there was 80 customers bought milk. 
+
+![](association-rule3.png){:height="30%" width="30%"}
+
+- For 2-itemsetD = {shampoo, milk}. {shampoo} -> {milk}: Out of 100 customers bought shampoo, there was 70 customers bought milk. Intuitively, it seems wrong because these two products have a week association. But confidence is still high. WHY? Because simply {milk} is a frequent itemset that presents in most of transactions.
+
+*To avoid misleading about this high confidence value*, **LIFT** metric comes in to overcome this problem. 
+
+b. ***LIFT*** metric
+
+Case study
+
+![](association-rule4.png){:height="40%" width="40%"}
+
+Total transactions is 1,000. Out of 1,000 transactions, there are
+
+  - 800 transactions containing milk (if containing only milk = 800 - 70 = 730)
   
-  - 200 bought diapers
+  -  100 transactions containing shampoo (if containing only shampoo = 100 - 70 = 30)
+  
+  - There 70 transactions containing milk and shampoo. In another word, out of 100 transactions containing shampoo, there are 70 transactions containing additional milk. Similarly, out of 800 transactions containing milk, there are also 70 transactions containing additional shampoo.
 
-  - Of the 200 who bought diapers, 50 bought beer
+=> Confidence of {shampoo} -> {milk} = P(milk on shopping cart | shampoo) = 70 / 100 = 0.7
 
-=> Association rule: "If buy diapers, then buy beer":
+Now, to avoid misleading, we MUST consider: P(milk on shopping cart | WITHOUT shampoo) = 800 / 1,000 = 0.8
 
-  - Support = 50/1000 = 5%: There is 5% of customers purchased both beer and diapers
+**Interpretation**
 
-  - Confidence = 50/200 = 25%: Among those who purchased diapers, there is 25% of those who purchased beer
+It turns out that without shampoo on the cart, P(milk on shopping cart) is 0.8. But if given shampoo on the cart, P(milk on shopping cart) reduces to 0.7. To measure exactly, we use LIFT = 0.7 / 0.8 = 0.87. LIFT value < 1 shows that having shampoo on the cart does not increase the chances of occurrence of milk on the cart in spite of the CONFIDENCE rule is high. 
 
-Example 2
+![](association-rule5.png){:height="30%" width="30%"}
+
+LIFT > 1: there is a high association between {X} and {Y}: if customer has already bought X, there is a greater chances of buying Y.
+
+### 3. Interpret association metrics in plain English
+
+Example
 
 Left handside: {squash} => Right handside: {beans}
 
-Support = 0.428: There are around 42.8% of customers purchased both squash and beans
+Support = 0.428: There are around 42.8% of customers purchased both squash and beans among total transactions
 
 Confidence = 0.857: Among those who purchased squash, there is around 85.7% of those who purchased beans
 
 Lift = 1.2: If we know customer purchases squash, there is 1.2 times more likely to buy beans than all of other customers.
 
-### 2. Data representation for Market basket analysis
+### 3. Association rule
 
-There are 2 principal methods of representing this type of market basket data
+Next step is to generate rules from the entire list of items and identify the most important ones. This is not simple because supermarkets have thousands of different products and combination is such a pain.
 
-- Use transactional data
+How to come up with a set of most important association rules to be considered ? Using *Apriori algorithm*
 
-- Use tabular data format 
+Please read [Association Rule - Part 2]
+
+--------------------------
+References
+
+Anisha Garg, https://towardsdatascience.com/association-rules-2-aa9a77241654
 
 
 
