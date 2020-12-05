@@ -150,8 +150,9 @@ Neural network can easily overfit the data, causing error rate on validation dat
 
 => Need to limit the number of training iterations
 
-In classification and regression trees: overfitting can be detected by exammining the performance on validation set or better on a cross-validation set. When validation/cross-validation increases while training set performance is still improving, it is the sign of overfitting. Please read more [Bias-Variance-Detection])https://lytranp.github.io/notes/Bias-Variance-Detection)
------------
+In classification and regression trees: overfitting can be detected by exammining the performance on validation set or better on a cross-validation set. When validation/cross-validation increases while training set performance is still improving, it is the sign of overfitting. Please read more [Bias-Variance-Detection](https://lytranp.github.io/notes/Bias-Variance-Detection)
+
+-----------------------------------------------------------------
 **References**
 
 Galit Shmueli Peter, C.Bruce Peter Gedeck, Nitin R.Patel, Data Mining for Business Analytics Concepts, Techniques and Applications in Python
