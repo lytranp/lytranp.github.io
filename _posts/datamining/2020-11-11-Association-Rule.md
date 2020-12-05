@@ -1,7 +1,7 @@
 ---
 layout: post
 mathjax: true
-title: "Market Basket Analysis "
+title: "Association Rule - Market Basket Analysis "
 read: 15
 secondary: datamining
 date: 2020-11-18
@@ -12,7 +12,32 @@ date: 2020-11-18
   
 - Association rules take the form "If antecedent, then consequent"
 
-- Measure of the support and confidence associated with the rule
+![](association-rule1.png)){:height="40%" width="40%"}
+
+- Itemset is the list of all the items in the antecedent and the consequent
+
+- Implication here is co-occurrence and not causality
+
+### 2. Metrics to measure association rule
+
+**Case study**
+
+- Total transactions in a supermarket on Sat is: 1,0000 transactions
+
+- Consider: 
+  
+  -  1-itemsetA = {bread}
+  
+  -  1-itemsetB = {shampoo}
+  
+  - 2-itemsetC = {bread, milk}
+
+  - 2-itemsetD = {shampoo, milk}
+
+***SUPPORT*** metric = $\frac{Transaction containing X}{Total transaction}$
+
+
+
 
 Example 1:
 
