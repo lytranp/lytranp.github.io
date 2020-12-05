@@ -7,7 +7,7 @@ secondary: datamining
 date: 2020-11-18
 ---
 
-please read [Decision Tree - Part 1](/_posts/datamining/2020-11-11-Decision-Tree-1.md) 
+please read [Decision Tree - Part 1](2011-11-11-Decision-Tree-1.md) 
 
 ## 1. Case study 
 
