@@ -14,7 +14,7 @@ date: 2020-12-05
 
 ![](/sources/association-rule1.png){:height="40%" width="40%"}
 
-- Itemset is the list of all the items in the antecedent and the consequent
+- Itemset is the list of all the items in the antecedent and the consequent. *k-itemset* is an itemset containing k items
 
 - Implication here is co-occurrence and not causality
 
