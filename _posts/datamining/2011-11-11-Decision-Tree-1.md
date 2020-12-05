@@ -62,7 +62,7 @@ Assume we stop at depth-2 right node, so Decision Tree should out the following 
 
 Scikit-learn uses CART (Classification and Regression Tree) algorithm to train Decision Trees. The algorithm works by first splitting the training set into 2 subsets using a single feature k (length) and a threshold t (<= 2.45) at that feature k. 
 
-How to choose k and t ? Use CART cost function for classification. Once CART algorithm successfully split the training set in two, it splits the subsets using the same logic, then the sub-subsets, and so on. It stops recursing once it reaches the maximum depth (*max_depth* hyperparameter), or if it can not find a split that will reduce impurity. To see example, please read [Decision Tree - Part 2](2011-11-11-Decision-Tree.md)
+How to choose k and t ? Use CART cost function for classification. Once CART algorithm successfully split the training set in two, it splits the subsets using the same logic, then the sub-subsets, and so on. It stops recursing once it reaches the maximum depth (*max_depth* hyperparameter), or if it can not find a split that will reduce impurity. To see example, please read [Decision Tree - Part 2](/_posts/datamining/2020-11-11-Decision-Tree.md)
 
 ![](/sources/datamining-decision-tree-4.png){:height="60%" width="60%"}
 
