@@ -12,7 +12,7 @@ date: 2020-12-05
   
 - Association rules take the form "If antecedent, then consequent"
 
-![](association-rule1.png){:height="40%" width="40%"}
+![](/sources/association-rule1.png){:height="40%" width="40%"}
 
 - Itemset is the list of all the items in the antecedent and the consequent
 
@@ -34,17 +34,17 @@ date: 2020-12-05
 
   - 2-itemsetD = {shampoo, milk}
 
-a. ***SUPPORT*** metric
+**SUPPORT** metric
 
 - The ratio of total transactions containing X and total transactions. Here, X can be 1-itemset or k-itemset.  
 
-![](association-rule2.png){:height="30%" width="30%"}
+![](/sources/association-rule2.png){:height="30%" width="30%"}
 
-- **SUPPORT** of 2-itemsetC = {Total transactions containing bread and milk} / Total transactions of supermarket on Sat = 50/1,000 = 0.05
+- SUPPORT of 2-itemsetC = {Total transactions containing bread and milk} / {Total transactions of supermarket on Sat} = 50/1,000 = 0.05
 
 => Itemset containing bread and milk occur 50 times out of a total of 1,000 transaction. If an itemset has very low **SUPPORT**, we do not enough information on the relationship between its item and so, no conclusions can be drawn from such a rule.
 
-b. ***CONFIDENCE*** metric
+**CONFIDENCE** metric
 
 - For 2-itemsetC = {bread, milk}, check association from {bread} -> {milk}: Out of 100 customers bought bread, there was 80 customers bought milk. 
 
@@ -54,7 +54,7 @@ b. ***CONFIDENCE*** metric
 
 *To avoid misleading about this high confidence value*, **LIFT** metric comes in to overcome this problem. 
 
-b. ***LIFT*** metric
+**LIFT** metric
 
 Case study
 
@@ -68,7 +68,7 @@ Total transactions is 1,000. Out of 1,000 transactions, there are
   
   - There 70 transactions containing milk and shampoo. In another word, out of 100 transactions containing shampoo, there are 70 transactions containing additional milk. Similarly, out of 800 transactions containing milk, there are also 70 transactions containing additional shampoo.
 
-=> Confidence of {shampoo} -> {milk} = P(milk on shopping cart | shampoo) = 70 / 100 = 0.7
+Result: Confidence of {shampoo} -> {milk} = P(milk on shopping cart | shampoo) = 70 / 100 = 0.7
 
 Now, to avoid misleading, we MUST consider: P(milk on shopping cart | WITHOUT shampoo) = 800 / 1,000 = 0.8
 
@@ -86,13 +86,13 @@ Example
 
 Left handside: {squash} => Right handside: {beans}
 
-Support = 0.428: There are around 42.8% of customers purchased both squash and beans among total transactions
+- Support = 0.428: There are around 42.8% of customers purchased both squash and beans among total transactions
 
-Confidence = 0.857: Among those who purchased squash, there is around 85.7% of those who purchased beans
+- Confidence = 0.857: Among those who purchased squash, there is around 85.7% of those who purchased beans
 
-Lift = 1.2: If we know customer purchases squash, there is 1.2 times more likely to buy beans than all of other customers.
+- Lift = 1.2: If we know customer purchases squash, there is 1.2 times more likely to buy beans than all of other customers.
 
-### 3. Association rule
+### 4. Association rule
 
 Next step is to generate rules from the entire list of items and identify the most important ones. This is not simple because supermarkets have thousands of different products and combination is such a pain.
 
