@@ -17,7 +17,7 @@ date: 2020-12-05
 
 a. Holdout method with 2 datasets: Training and Test set (hold-out set)
 
-![](model-evaluation1.png){:height="60%" width="60%"}
+![](/sources/model-evaluation1.png){:height="60%" width="60%"}
 
 - After training model, use it to predict on Testing dataset. Next, compute error using various metrics depends on Regression or Classification problems. 
 
@@ -35,7 +35,7 @@ a. Holdout method with 2 datasets: Training and Test set (hold-out set)
 
 b. Holdout method with 3 datasets: Training, Validation and Test set
 
-![](model-evaluation2.png){:height="60%" width="60%"}
+![](/sources/model-evaluation2.png){:height="60%" width="60%"}
 
 -  After training model using training dataset, apply the built model on validation set to assess the model performance. We can tuning model's hyper-parameters and come back validation set to assess the model again. Finally, selecting the best-performing model with a specific combination of hyper-parameters. 
 
@@ -49,7 +49,7 @@ As we mentioned about limitation of hold-out method with validation, the perform
 
 a. **Cross validation - the general idea**
 
-![](model-evaluation3.png){:height="60%" width="60%"}
+![](/sources/model-evaluation3.png){:height="60%" width="60%"}
 
 - Firstly, separating test set from entire original data set to use for the final evaluation of model. 
 
@@ -59,7 +59,7 @@ a. **Cross validation - the general idea**
 
 b. **Cross validation with 1 model **
 
-![](model-evaluation4.png){:height="60%" width="60%"}
+![](/sources/model-evaluation4.png){:height="60%" width="60%"}
 
 - If we choose K = 5, then we will have 5 iterations and at each iteration, whole dataset will be divided into 5 equal parts. 
   
@@ -71,7 +71,7 @@ c. **Cross validation with many models **
 
 If we train model using many different algorithms such as Logistic Regression, Decision Trees and KNN, above step will run separately for each of these models. And we will have 3 generalization error values to choose from.
 
-![](model-evaluation5.png){:height="60%" width="60%"}
+![](/sources/model-evaluation5.png){:height="60%" width="60%"}
 
 **Conclusion**: Cross validation reduces the bias and variance, meaning that the model does not overfit or underfit. It also help to find the best model. It also can use to optimize the hyper-parameters.
 
