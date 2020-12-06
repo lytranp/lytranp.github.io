@@ -14,11 +14,11 @@ As we mentioned in the part 1, a supermarket has a thousands of products. If we 
 
 There are 2 principal methods of representing this type of market basket data
 
-- Use transactional data
++ Use transactional data
 
 ![](/sources/association-rule-2-1.png){:height="50%" width="50%"}
 
-- Use tabular data format 
++ Use tabular data format 
 
 ![](/sources/association-rule-2-2.png){:height="50%" width="50%"}
 

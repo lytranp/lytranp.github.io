@@ -98,7 +98,7 @@ Next step is to generate rules from the entire list of items and identify the mo
 
 How to come up with a set of most important association rules to be considered ? Using *Apriori algorithm*
 
-Please read [Association Rule - Part 2]
+Please read [Association Rule - Part 2](https://lytranp.github.io/notes/Association-Rule-2)
 
 --------------------------
 References
