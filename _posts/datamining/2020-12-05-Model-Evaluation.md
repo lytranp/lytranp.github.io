@@ -57,7 +57,7 @@ a. **Cross validation - the general idea**
 
 - At each iteration, use one of K folds as validation set, and using all remaining folds as training set. 
 
-b. **Cross validation with 1 model **
+b. **Cross validation with 1 model**
 
 ![](/sources/model-evaluation4.png){:height="60%" width="60%"}
 
@@ -67,7 +67,7 @@ b. **Cross validation with 1 model **
 
 - Finally, results from each iteration are combined and averaged to come up with the final error. 
 
-c. **Cross validation with many models **
+c. **Cross validation with many models**
 
 If we train model using many different algorithms such as Logistic Regression, Decision Trees and KNN, above step will run separately for each of these models. And we will have 3 generalization error values to choose from.
 
