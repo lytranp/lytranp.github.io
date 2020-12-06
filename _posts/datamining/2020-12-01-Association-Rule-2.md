@@ -10,17 +10,17 @@ Please read [Association Rule - Market Basket Analysis - Part 1](https://lytranp
 
 ### 1. Why need Apriori algorithm ?
 
-As we mentioned in the part 1, a supermarket has a thousands of products. If we have k attributes, we will have k*2^{k-1} possible association rules. E.g, if we have 10 products, we will have 10*2^9 = 5,120 rules. Therefore, we need this algorithm to reduce it to a more manageable size
+As we mentioned in the part 1, a supermarket has a thousands of products. If we have k attributes, we will have k x 2^{k-1} possible association rules. E.g, if we have 10 products, we will have 10 x 2^9 = 5,120 rules. Therefore, we need this algorithm to reduce it to a more manageable size
 
 There are 2 principal methods of representing this type of market basket data
 
 - Use transactional data
 
-![](/sources/association-rule-2-1.png){:height="40%" width="40%"}
+![](/sources/association-rule-2-1.png){:height="50%" width="50%"}
 
 - Use tabular data format 
 
-![](/sources/association-rule-2-2.png){:height="40%" width="40%"}
+![](/sources/association-rule-2-2.png){:height="50%" width="50%"}
 
 This data is before applying Apriori algorithm.
 
