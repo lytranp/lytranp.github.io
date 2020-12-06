@@ -6,8 +6,7 @@ read: 15
 secondary: datamining
 date: 2020-12-05
 ---
-
-### 1. Why need model evaluation ?
+# 1. Why need model evaluation ?
 
 - Find the best model that represents our data and how well the chosen model will work in the future
 
