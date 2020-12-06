@@ -10,7 +10,7 @@ Please read [Association Rule - Market Basket Analysis - Part 1](https://lytranp
 
 ### 1. Why need Apriori algorithm ?
 
-As we mentioned in the part 1, a supermarket has a thousands of products. If we have k attributes, we will have $k*2^{k-1}$ possible association rules. E.g, if we have 10 products, we will have $10*2^9$ = 5,120 rules. Therefore, we need this algorithm to reduce it to a more manageable size
+As we mentioned in the part 1, a supermarket has a thousands of products. If we have k attributes, we will have k*2^{k-1} possible association rules. E.g, if we have 10 products, we will have 10*2^9 = 5,120 rules. Therefore, we need this algorithm to reduce it to a more manageable size
 
 There are 2 principal methods of representing this type of market basket data
 
@@ -34,7 +34,7 @@ Case study
   
 + Transaction 3 (T3) contains items I2(milk), I3(shoes) and so on
 
-![](association-rule-2-3.png){:height="20%" width="20%"}
+![](/sources/association-rule-2-3.png){:height="20%" width="20%"}
 
 **Step 1**: k = 1
 
@@ -48,11 +48,11 @@ Case study
 
 **Step 2**: k = 2
 
-- Choose frequent itemsets from step 1 (in another word, get itemsetA1) to generate itemsets of length 2 and count their occurences. 
+Choose frequent itemsets from step 1 (in another word, get itemsetA1) to generate itemsets of length 2 and count their occurences. 
 
 ![](/sources/association-rule-2-5.png){:height="20%" width="20%"}
 
-- Compare support count with ***minimum support*** (here, min_support = 2). Remove itemsets < min_support. As a result, we have this itemsetA2 (entire table)
+Compare support count with ***minimum support*** (here, min_support = 2). Remove itemsets < min_support. As a result, we have this itemsetA2 (entire table)
 
 ![](/sources/association-rule-2-6.png){:height="20%" width="20%"}
 
