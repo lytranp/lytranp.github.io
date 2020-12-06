@@ -83,7 +83,7 @@ Case study
 
 - 3 models: KNN, Decision Trees and Support vector machines (SVC)
 
-- Problem: Find the best model ? 
+- *Problem: Find the best model with its best hyperparameter ? *
 
 Assume that in each model, there is 2 hyper-parameters need to tune. E.g KNN has hyper-parameter N with possible values = 3,4; SVC has hyper-parameter C with possible values = 1,2; Decision Tress has hyper-parameter Depth with possible values = 100,200. 
 
