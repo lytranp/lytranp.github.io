@@ -16,11 +16,11 @@ There are 2 principal methods of representing this type of market basket data
 
 - Use transactional data
 
-![](association-rule-2-1.png){:height="40%" width="40%"}
+![](/sources/association-rule-2-1.png){:height="40%" width="40%"}
 
 - Use tabular data format 
 
-![](association-rule-2-2.png){:height="40%" width="40%"}
+![](/sources/association-rule-2-2.png){:height="40%" width="40%"}
 
 This data is before applying Apriori algorithm.
 
@@ -40,7 +40,7 @@ Case study
 
 - Create a table counting occurrence of EVERY SINGLE items (1-itemset) in shopping cart (sup_count)
 
-![](association-rule-2-4.png){:height="20%" width="20%"}
+![](/sources/association-rule-2-4.png){:height="20%" width="20%"}
 
 - Compare column sup_count (occurence) with ***minimum support*** (min_support: that was chosen based on experience and business). Assuming, if min_support = 2, we will remove items < min_support. As a result, we have a table as above, called itemsetA1 for the entire table.  
 
@@ -50,17 +50,17 @@ Case study
 
 - Choose frequent itemsets from step 1 (in another word, get itemsetA1) to generate itemsets of length 2 and count their occurences. 
 
-![](association-rule-2-5.png){:height="20%" width="20%"}
+![](/sources/association-rule-2-5.png){:height="20%" width="20%"}
 
 - Compare support count with ***minimum support*** (here, min_support = 2). Remove itemsets < min_support. As a result, we have this itemsetA2 (entire table)
 
-![](association-rule-2-6.png){:height="20%" width="20%"}
+![](/sources/association-rule-2-6.png){:height="20%" width="20%"}
 
 **Step 3**: k = 3
 
 Similar to above steps, using itemsetA2 to generate itemsets of length 3 and count their occurences. After that, compare with min_support. This give us itemsetA3
 
-![](association-rule-2-7.png){:height="20%" width="20%"}
+![](/sources/association-rule-2-7.png){:height="20%" width="20%"}
 
 **Step 4**:
 
