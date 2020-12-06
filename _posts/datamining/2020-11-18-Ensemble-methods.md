@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ensemble Methods!"
+title: "Ensemble Methods"
 read: 15
 secondary: datamining
 date: 2020-11-18

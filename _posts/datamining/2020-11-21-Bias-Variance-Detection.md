@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bias & Variance - Detection!"
+title: "Bias & Variance - Detection"
 read: 15
 secondary: datamining
 date: 2020-11-21
