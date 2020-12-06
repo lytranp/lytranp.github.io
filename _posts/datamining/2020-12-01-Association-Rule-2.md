@@ -38,21 +38,21 @@ Case study
 
 **Step 1**: k = 1
 
-+ Create a table counting occurrence of EVERY SINGLE items (1-itemset) in shopping cart (sup_count)
+- Create a table counting occurrence of EVERY SINGLE items (1-itemset) in shopping cart (sup_count)
 
 ![](association-rule-2-4.png){:height="20%" width="20%"}
 
-+ Compare column sup_count (occurence) with ***minimum support*** (min_support: that was chosen based on experience and business). Assuming, if min_support = 2, we will remove items < min_support. As a result, we have a table as above, called itemsetA1 for the entire table.  
+- Compare column sup_count (occurence) with ***minimum support*** (min_support: that was chosen based on experience and business). Assuming, if min_support = 2, we will remove items < min_support. As a result, we have a table as above, called itemsetA1 for the entire table.  
 
-+ Term: **Frequent itemsets** are the ones having support value >= ***minimum support*** (minimum threshold)
+- Term: **Frequent itemsets** are the ones having support value >= ***minimum support*** (minimum threshold)
 
 **Step 2**: k = 2
 
-+ Choose frequent itemsets from step 1 (in another word, get itemsetA1) to generate itemsets of length 2 and count their occurences. 
+- Choose frequent itemsets from step 1 (in another word, get itemsetA1) to generate itemsets of length 2 and count their occurences. 
 
 ![](association-rule-2-5.png){:height="20%" width="20%"}
 
-+ Compare support count with ***minimum support*** (here, min_support = 2). Remove itemsets < min_support. As a result, we have this itemsetA2 (entire table)
+- Compare support count with ***minimum support*** (here, min_support = 2). Remove itemsets < min_support. As a result, we have this itemsetA2 (entire table)
 
 ![](association-rule-2-6.png){:height="20%" width="20%"}
 
@@ -70,27 +70,31 @@ We stop here because no frequent itemsets are found further
 
 Remember CONFIDENCE metric from [Association Rule - Market Basket Analysis - Part 1](https://lytranp.github.io/notes/Association-Rule)
 
-![](/sources/association-rule3.png){:height="30%" width="30%"}
+![](/sources/association-rule3.png){:height="60%" width="60%"}
 
 Example
 
 - If rule {bread} -> {milk}, then Confidence = {Transactions containing both bread and milk} / {Transaction containing bread}
 
-- In our above case study: 
+- Similarly, in our above case study: 
   
-  + {I1 , I2} -> {I3}
+  + If rule: {I1 , I2} -> {I3}
   
   => Confidence = {Transactions containing I1, I2, I3} / {Transaction containing I1, I2} = sup_count(I1, I2, I3) / sup_count(I1, I2) = 2 / 4 = 50%
 
-  + {I1} -> {I2, I3}
+  + If rule: {I1} -> {I2, I3}
 
- => Confidence = {Transactions containing I1, I2, I3} / {Transaction containing I1} = sup_count(I1, I2, I3) / sup_count(I1) = 2 / 6 = 33%
+  => Confidence = {Transactions containing I1, I2, I3} / {Transaction containing I1} = sup_count(I1, I2, I3) / sup_count(I1) = 2 / 6 = 33%
 
- *Interpretation* for Confidence
+ ***Interpretation* for Confidence**
 
  A confidence 50% means that 50% of the customers who bought I1 and I2 also bought I3
 
  A confidence 33% means that 33% of the customers who bought I1 also bought I2 and I3
 
+---------------------------------
+**References**
 
+https://www.geeksforgeeks.org/apriori-algorithm/?ref=lbp
 
+https://www.analyticsvidhya.com/blog/2017/08/mining-frequent-items-using-apriori-algorithm/
