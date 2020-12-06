@@ -26,12 +26,12 @@ a. Holdout method with 2 datasets: Training and Test set (hold-out set)
 - This method is only used when we only have one model to evaluate and no hyper-parameters to tune.
 
 - Limitation of this method: 
-  
-+ Training or testing dataset are not able to represent the actual complete data, then the results from the test sets can be skewed. 
 
-+ Error after applying model on testing dataset can highly depend on the observations of training and testing dataset
+  + Training or testing dataset are not able to represent the actual complete data, then the results from the test sets can be skewed. 
 
-+ Not effective for comparing multiple models and tuning their hyperparameters.
+  + Error after applying model on testing dataset can highly depend on the observations of training and testing dataset
+
+  + Not effective for comparing multiple models and tuning their hyperparameters.
 
 b. Holdout method with 3 datasets: Training, Validation and Test set
 
@@ -83,7 +83,7 @@ Case study
 
 - 3 models: KNN, Decision Trees and Support vector machines (SVC)
 
-- *Problem: Find the best model with its best hyperparameter ? *
+- *Problem: Find the best model with its best hyperparameter ?*
 
 Assume that in each model, there is 2 hyper-parameters need to tune. E.g KNN has hyper-parameter N with possible values = 3,4; SVC has hyper-parameter C with possible values = 1,2; Decision Tress has hyper-parameter Depth with possible values = 100,200. 
 
