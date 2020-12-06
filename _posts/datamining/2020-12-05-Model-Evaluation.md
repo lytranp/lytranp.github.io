@@ -75,7 +75,7 @@ If we train model using many different algorithms such as Logistic Regression, D
 
 **Conclusion**: Cross validation reduces the bias and variance, meaning that the model does not overfit or underfit. It also help to find the best model. It also can use to optimize the hyper-parameters.
 
-## 4. Example of cross validation include step of tuning hyper-parameters
+### 4. Example of cross validation include step of tuning hyper-parameters
 
 Case study
 
@@ -118,6 +118,7 @@ Assume that in each model, there is 2 hyper-parameters need to tune. E.g KNN has
 --------------
 References
 
+Data Vedas, https://www.datavedas.com/k-fold-cross-validation/
+
 https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7
 
-https://www.datavedas.com/k-fold-cross-validation/
