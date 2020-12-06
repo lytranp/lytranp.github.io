@@ -72,17 +72,17 @@ Remember CONFIDENCE metric from [Association Rule - Market Basket Analysis - Par
 
 ![](/sources/association-rule3.png){:height="60%" width="60%"}
 
-Example
+Example:
 
-- If rule {bread} -> {milk}, then Confidence = {Transactions containing both bread and milk} / {Transaction containing bread}
+If rule {bread} -> {milk}, then Confidence = {Transactions containing both bread and milk} / {Transaction containing bread}
 
-- Similarly, in our above case study: 
-  
-  + If rule: {I1 , I2} -> {I3}
+Similarly, in our above case study: 
+
++ If rule: {I1 , I2} -> {I3}
   
   => Confidence = {Transactions containing I1, I2, I3} / {Transaction containing I1, I2} = sup_count(I1, I2, I3) / sup_count(I1, I2) = 2 / 4 = 50%
 
-  + If rule: {I1} -> {I2, I3}
++ If rule: {I1} -> {I2, I3}
 
   => Confidence = {Transactions containing I1, I2, I3} / {Transaction containing I1} = sup_count(I1, I2, I3) / sup_count(I1) = 2 / 6 = 33%
 
