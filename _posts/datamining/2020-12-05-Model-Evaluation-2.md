@@ -15,7 +15,7 @@ There is a various criteria by which model can be evaluated and compared. In gen
 
 - Classification Problem
 
-    + Confusion Matrix
+    + [Confusion Matrix](https://lytranp.github.io/notes/ROC)
 
     + Gain and Lift charts
 
