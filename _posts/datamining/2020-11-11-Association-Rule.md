@@ -68,15 +68,15 @@ Total transactions is 1,000. Out of 1,000 transactions, there are
   
   - There 70 transactions containing milk and shampoo. In another word, out of 100 transactions containing shampoo, there are 70 transactions containing additional milk. Similarly, out of 800 transactions containing milk, there are also 70 transactions containing additional shampoo.
 
-=> Result: Confidence of {shampoo} -> {milk} = P(milk on shopping cart | shampoo) = 70 / 100 = 0.7
+Result: Confidence of {shampoo} -> {milk} = P(milk on shopping cart | shampoo) = 70 / 100 = 0.7
 
-=> Now, to avoid misleading, we MUST consider: P(milk on shopping cart | WITHOUT shampoo) = 800 / 1,000 = 0.8
+Now, to avoid misleading, we MUST consider: P(milk on shopping cart | WITHOUT shampoo) = 800 / 1,000 = 0.8
 
 **Interpretation**
 
 It turns out that without shampoo on the cart, P(milk on shopping cart) is 0.8. But if given shampoo on the cart, P(milk on shopping cart) reduces to 0.7. To measure exactly, we use LIFT = 0.7 / 0.8 = 0.87. LIFT value < 1 shows that having shampoo on the cart does not increase the chances of occurrence of milk on the cart in spite of the CONFIDENCE rule is high. 
 
-![](/sources/association-rule5.png){:height="50%" width="50%"}
+![](/sources/association-rule5.png){:height="60%" width="60%"}
 
 If LIFT > 1: there is a high association between {X} and {Y}: if customer has already bought X, there is a greater chances of buying Y.
 
