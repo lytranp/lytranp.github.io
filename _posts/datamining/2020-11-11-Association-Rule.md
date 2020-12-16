@@ -68,9 +68,9 @@ Total transactions is 1,000. Out of 1,000 transactions, there are
   
   - There 70 transactions containing milk and shampoo. In another word, out of 100 transactions containing shampoo, there are 70 transactions containing additional milk. Similarly, out of 800 transactions containing milk, there are also 70 transactions containing additional shampoo.
 
-Result: Confidence of {shampoo} -> {milk} = P(milk on shopping cart | shampoo) = 70 / 100 = 0.7
+* Result: Confidence of {shampoo} -> {milk} = P(milk on shopping cart | shampoo) = 70 / 100 = 0.7
 
-Now, to avoid misleading, we MUST consider: P(milk on shopping cart | WITHOUT shampoo) = 800 / 1,000 = 0.8
+* Now, to avoid misleading, we MUST consider: P(milk on shopping cart | WITHOUT shampoo) = 800 / 1,000 = 0.8
 
 **Interpretation**
 
