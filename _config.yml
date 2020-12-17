@@ -6,43 +6,17 @@ description:        "Academic Blog."
 baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
 permalink:          /notes/:title # Post permalink
 
-# Enter the following platform usernames if you would like for them to appear on your site.
-owner:
-  name: Ly Tran
-  avatar: me.png
-  bio: 
-  email: ly.tran@fulbrightmail.org
-  # Do not include the @ symbol in your Twitter username
-  twitter: 
-  linkedin: #username
-  github: 
-  orcid: # ID Number (ex. 0000-0000-0000-0000)
-  researchgate: #username
-  mendeley: #username
-  google:
-    plus: #username
-    analytics:
-    verify:
-    scholar: #id
-  facebook: #username
-  instagram: #username
-  bing-verify:
-  stackoverflow: #123456/username from a "https://stackoverflow.com/users/123456/username" link
-  xing: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  codepen: #username
-  disqus-shortname:
-
-
+# Site Author
+author:
+  name             : "Ly Tran"
+  avatar           : "/images/me.png"
+  bio              : "Data Analyst with background in Business Administrations"
+  location         : "Boston (MA)"
+  email            :
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:ly.tran@fulbrightmail.org
 
 # Site Build
 markdown:           kramdown
