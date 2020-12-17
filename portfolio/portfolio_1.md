@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /portfolio/
+collection: portfolio
 title: "Part 1 "
 ---
 
