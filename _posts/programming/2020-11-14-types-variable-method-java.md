@@ -3,7 +3,7 @@ layout: post
 mathjax: true
 title: "Types of variables and methods in Java"
 read: 15
-secondary: programming
+secondary: others
 date: 2020-11-13
 ---
 

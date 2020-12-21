@@ -3,7 +3,7 @@ layout: post
 mathjax: true
 title: "SQL - Intermediate - Part 1"
 read: 15
-secondary: programming
+secondary: others
 date: 2020-11-30
 ---
 
