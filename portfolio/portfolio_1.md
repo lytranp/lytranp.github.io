@@ -3,7 +3,7 @@ layout: page
 title: ""
 permalink: portfolio
 ---
-### Some mini scripts written by Python and Java - for tutoring purpose at academic institution
+### Mini scripts - for tutoring purpose
 
 + [Introduction to Programming Using Python](https://github.com/lytranp/Tutoring-PythonIntroduction)
 
