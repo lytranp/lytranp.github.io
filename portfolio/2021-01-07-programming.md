@@ -3,6 +3,7 @@ layout: post
 title: "Projects"
 permalink: portfolio
 ---
+
 ### Mini scripts - for tutoring purpose
 
 + Please see [Introduction to Programming Using Python](https://github.com/lytranp/Tutoring-PythonIntroduction)
