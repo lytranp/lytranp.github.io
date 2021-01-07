@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Projects"
-permalink: portfolio
+title: Projects
+permalink: /portfolio/
 ---
 ### Mini scripts - for tutoring purpose
 
