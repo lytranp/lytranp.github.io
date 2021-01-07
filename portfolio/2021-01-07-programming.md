@@ -2,6 +2,7 @@
 layout: post
 mathjax: true
 title: "Projects"
+permalink: portfolio
 ---
 ### Mini scripts - for tutoring purpose
 
