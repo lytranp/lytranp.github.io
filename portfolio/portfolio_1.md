@@ -4,4 +4,9 @@ title: "Part 1 "
 permalink: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text.
+### Some mini scripts written by Python and Java - for tutoring purpose at school
+
+1. [Introduction to Programming Using Python](https://github.com/lytranp/Tutoring-PythonIntroduction)
+
+2. [Introduction to Programming Using Java](https://github.com/lytranp/Tutoring-JavaIntroduction)
+
