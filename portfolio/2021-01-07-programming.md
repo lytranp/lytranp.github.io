@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: "Projects"
 permalink: portfolio
 ---
 ### Mini scripts - for tutoring purpose
