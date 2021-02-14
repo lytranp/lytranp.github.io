@@ -6,7 +6,7 @@ read: 15
 secondary: others
 date: 2021-02-11
 ---
-![](/sources/digitalMarketingP4-1.png){:height="60%" width="60%"}
+![](/sources/digitalMarketingP4-1.png){:height="40%" width="40%"}
 
 ### 1. Conversion rate
 
@@ -53,7 +53,7 @@ Because conversion rate from website visits to purchase = 0.06
 
 ### 4. Channel value
 
-- Customers come through different channel that worth different amount to us
+Customers come through different channel that worth different amount to us
 
 E.g: because conversion rate coming from brand is highest: 12% => a customer comes from brand is much more worth to us , assuming that we assign their value at 16.32 dollars which is double average
 
