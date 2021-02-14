@@ -38,19 +38,19 @@ b. Goals
 
 c. KPIs (do not have direct impact on revenue but towards goals)
 
-    + Page views
+- Page views
 
-    + Visitors / users
+- Visitors / users
 
-    + Rankings 
+- Rankings 
 
-    + Likes / Follows
+- Likes / Follows
 
-    + Views 
+- Views 
 
-    + Time on site
+- Time on site
 
-    + Pages viewed
+- Pages viewed
 
 d. Conversions: goal completions 
 
@@ -86,7 +86,7 @@ d. Conversions: goal completions
 
 * Note: New Users: has different numbers of people based on time frame (one week, one month...)
 
-![](/sources/digitalMarketingP1-3.png)
+![](/sources/digitalMarketingP1-3.png){:height="60%" width="60%"}
 
 **a. Source: Channels**
 
@@ -104,7 +104,7 @@ d. Conversions: goal completions
 
     + Email campaign
 
-![](/sources/digitalMarketingP1-1.png)
+![](/sources/digitalMarketingP1-1.png){:height="60%" width="60%"}
 
 **b. Content (Landing pages) + Behavior**
 
@@ -130,7 +130,7 @@ What did they do ?
 
 - Contact
 
-![](/sources/digitalMarketingP1-2.png)
+![](/sources/digitalMarketingP1-2.png){:height="60%" width="60%"}
 
 **c. Value: What are visitors actions worth ?**
 
@@ -170,4 +170,4 @@ Goal completions: 10 ; Value per new contact: 25 dollars => Total goal value = 2
 
 Goal conversion rate: Goal completions / Users = 10 / 500 = 0.02 : We have every 2 clients out of 100 
 
-![](/sources/digitalMarketingP1-4.png)
+![](/sources/digitalMarketingP1-4.png){:height="60%" width="60%"}
