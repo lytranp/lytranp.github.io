@@ -1,7 +1,7 @@
 ---
 layout: post
 mathjax: true
-title: "Digital Marketing: OOP - Part 5"
+title: "Digital Marketing: Google Analytics - Part 1"
 read: 15
 secondary: others
 date: 2021-02-11
