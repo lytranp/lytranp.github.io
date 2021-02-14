@@ -6,7 +6,6 @@ read: 15
 secondary: others
 date: 2021-02-11
 ---
-
 ### 1. Publish blog and video contents
 
 - Time on site
@@ -52,3 +51,17 @@ Subscription products have a unique set KPIs to track
 - Activation rate: to see if they open after install app 
 
 - Retention rate
+
+### Engagement levels of different visitors to the website
+
+- Blogs, articles, youtube: tend to stay longer. People who read blogs /articles have high chance to continue to click link to read  more pages and the chance they are converting into customers or subscribers very high because there is less visual competition, content is there and not many information trying to get their attention.
+	
+- Social media: tend to look at one page at only around 30s because social media has vastly types of information with more visual competition. 
+
+![](/sources/digitalMarketingP3-2.png){:height="60%" width="60%"}
+
+### How acquisition source affect the average lifetime customer value
+
+- Come from organic search has higher than average lifetime value. Reason: people search for a product are proactive people, they can convert to a customer
+  
+- Come from Twitter: customer buy products because they utilize discount promoted on social media. But they do not become a loyal customer => less than average lifetime value
