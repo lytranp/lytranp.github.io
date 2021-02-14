@@ -32,20 +32,20 @@ E.g: since conversion rate from visiting website to purchase produce =  600 / 10
 ![](/sources/digitalMarketingP4-3.png){:height="60%" width="60%"}
 
 ### 3. Forecast values:
-	
+
 - There are 2 major components of forecast values:
   
-    + Retention: % of people will come back and buy again. If 12% of people keep buying in the future, each person will add additional 12 dollar 
+  + Retention: % of people will come back and buy again. If 12% of people keep buying in the future, each person will add additional 12 dollar 
   
-	+ Referral: means someone refers a friend. If 24% of people refer a friend, every time you get a purchase, then that is an additional 24 dollars in your pocket that you bank on in the future
+  + Referral: means someone refers a friend. If 24% of people refer a friend, every time you get a purchase, then that is an additional 24 dollars in your pocket that you bank on in the future
 	
 => After we adding, forecast value = 36 dollars 
 	
-	Because average order value = $100 
+Because average order value = 100 dollars 
 	
 => Lifetime value of a customer  = 100 + 36 = 136 dollars (Note: incorporate a discount rate because a dollar made today is more worth than tomorrow)
 	
-	Because conversion rate from website visits to purchase = 0.06
+Because conversion rate from website visits to purchase = 0.06
     
 => On average, every website visitor should worth = 136 * 0.06 = 8.16 instead of 6 dollars
 
