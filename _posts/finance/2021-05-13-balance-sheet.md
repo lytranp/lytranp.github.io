@@ -3,7 +3,7 @@ layout: post
 mathjax: true
 title: "Finance - Balance Sheet"
 read: 5
-secondary: finance
+secondary: others
 date: 2021-05-13
 ---
 
