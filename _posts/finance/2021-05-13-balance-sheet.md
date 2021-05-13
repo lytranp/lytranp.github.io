@@ -15,65 +15,13 @@ date: 2021-05-13
 
 - Inventory: Service companies often do not have much in the way of inventory, but nearly every other company: manufacturers, wholesales, retailers does. One part of inventory is value of products that are ready to be sold (finished-goods inventory). Second part often relevant to manufacturers is the value of products that are under construction (work-in-process inventory). Third part is raw materials that will be used to make products.
 
-- 
+- Property, plant, equipment (PPE): includes buildings, machinery, trucks, computers, and every other physical asset a company owns. PPE figure is the total number of dollars it cost to buy all the facilities and equipment the company uses to operate the business. For example, you bought land at LA for $500,000 and the land could be worth $5 million today - but it will still be valued at $500,000 on the balance sheet. Relevant cost is the purchase price. Investors like to nose around in public companies' balance sheets in hopes of finding such undervalued assets
 
-## 2. Financial staff
+- Less: accumulated depreciation. Depreciation is a way of ensuring that the income statement accurately reflects the true cost of producing goods or delivering services. To calculate accumulated depreciation, accountants simply add up all the charges for depreciation they have taken since the day an asset was bought. In part 1, the way it depreciates can make from unprofitable to profitable. This also applies to the balance sheet. If company decides its truck can last 6 years rather than 3 years, it will record 50% smaller charge on its income statement. That means that less accumulated depreciation on the balance sheet, a higher figure for net PPE, and thus more assets. More assets translate into more owners' equity
 
-- CFO: responsible for internal departments, oversee the management and strategy of the organization from financial perspective, responsible for the quality of the financial reporting. He or she should use that info to advise CEO on the financial issues facing the company.
+- Acquisition: occurs when one company buys another. Assume you found a warehousing business called X that fits your needs perfectly. You agree to buy X for $5 million. If you pay in cash, the asset labeled "cash" on balance sheet will decrease by $5 million. That means other assets have to rise by $5 million. And you have not done anything so far that changes liabilities or owner's equity. Since you bought a collection of physical assets, you will decide that X's buildings, sheving, computers are worth $2 million, after deducting whatever liabilities. That does not mean you made a bad deal. You are buying a customer list, talented employees... So-called intangibles can be much more valuable than the tangible assets. Accountants call intangibles $3 million goodwill and $2 million of net physical assets.
 
-- Treasurer: deals with the outside world: meet with analysts, communicate with investors, negotiate with bankers...This person reports to the CFO
 
-- Controller: purely internal, responsible for general accounting, financial reporting, business analysis, asset management...Without consistent data from controller, CFO and treasurer can not do their jobs
-
-## 3. Matching principle
-
-- Match the costs with the associated sale to determine profits in a given period of time.
-
-- Examples:
-
-    + If company buy products in June to resell to customers over the next several months, it does not record the cost of all those products in June. Rather, it records the cost of each product when it is sold.
-
-    + If company buy equipment in Jan and plans to use over the next three years, the cost of equipment is depreciated over the whole three years, with 1/3 equipment's cost appearing as an expense on the income statement each month (assume a simple-straight-line method of depreciation)
-
-    + Company may pay tax bill once a quarter, but every month, accountant will tuck into the income statement a figure reflecting the taxes owed on that month's profits.
-
-=> Cash-based accounting would not give an accurate picture of reality. For example, it might record a huge loss in the month when it paid for products, and correspondingly higher profit in the other months. So, everyone would not understand what caused the volatility. Accrual accounting matches costs to sales, so it gives you a more accurate picture of whether you are really making money on your sales.
-
-## 4. INCOME STATEMENT - Critical thinking
-
-Income statement tries to measure whether the products or services that a company provides are profitable when everything is added up. Companies of all sizes use different language to put labels: Profit & Loss statement; Operating statement; Earnings statement
-
-- Profit is based on revenue. Revenue is recognized when a product or service is delivered, not when the bill is paid. Most of time, you have to pay expenses before you really have revenue. So, revenue does not reflect real money and profit is often no more than a promise. You can make money as shown by the income statement, but you may not be generating cash fast enough to pay your bills.
-
-=> That is one reason why even a highly profitable company may find that cash is tight, and many entrepreneurial businesses run out of cash. Profit is always an estimate - and you can not spend estimates
-
-- Revenue: the guideline that accountants use for recording a sale is that the revenue must have been earned. For example, company must have shipped the product, or service company must have performed the work. But when a sale can be recorded ? What would you do about this situation: a project requires 6 months to design and another 12 months to implement. The customer gets no real value from the project until the whole thing is complete. So, when have you earned the revenue from the project ?
-
-=> There is no hard and fast answers because accounting practices differ from one company to another. So, revenue on top line always reflects the accountant's judgements about when they should recognize revenue. 
-
-- Costs and expenses (COGS or COS): there are plenty of estimates and biases on these expense lines. COGS is to measure all the costs directly associated with making the product or delivering the service - the materials, the labor. But what is included ? Some of these decisions are easy: wages of people on the manufacturing line or cost of materials that are used to make the product. However, there is the gray area. What about the salary of the manager where the product is manufactured ? Is this expense related to the manufacturing of the product ? or is it operating expenses ? You can argue that his salary is part of general operations and therefore should not be included in the COGS line. You also can aruge that he is supporting direct-product employees, so he should be included with them in that line. 
-
-=> There is no hard and fast rules, even you follow GAAP.
-
-- Operating expenses: are the other major category of expenses. It includes costs that are not directly related to making a product or delivering a service. Company should separate out whatever is most important so that you can track it easily. For example, you can give sales and marketing its own line while others treat SG&A (selling, general and administrative expenses) as one subcategory. It is hard to decide what is included in operating expenses. For example, owner wants to move salary of manager from COSG line to operating expense. Then, when you look at the trend, gross margins seems to be improving that comes from a change in the way expenses were accounted for.
-
-=> GAAP stands for "generally accepted accounting principles": defines the standard for creating financial reports in US. It helps ensure the statements' validity and reliability, and it allows for easy comparison between companies and across industries. But GAAP does not spell out everything. GAAP only provides guidelines, companies take those guideliines and apply a logic that make sense for their particular situations. You can even take an expense out of COGS one month and put it back in next month. All you need is reason good enough to convince the accountant (and in a public company, the auditor, if the changes are material to the company's financials). Of course, changing the rules constantly from one period to the next would be bad form. One thing we all need from our accountants is consistency
-
-- Depreciation and amortization: is another expense that is often buried in SG&A line. The way we treat this expense can greatly affect the profit on an income statement. 
-
-    + Depreciation is the expensing of a physical asset, such as a truck or a machine, over its estimated useful life. This means that the accountants figure out how long the asset is likely to be in use. But they can not know how long it will last exactly: 3 years? , 5 years ? For example, Net profit = Revenue - COGS - Expenses - Depreciation. Assuming the company bought a truck $3,000. If accountant thinks that it lasts only 1 year, then they will depreciate it at $3,000 a month that move net profit to loss of $1,000 at bottom line. But if the accountant assumed that it lasts 6 years, then they will depreciate only $500 a month and net profit jumps to $1,500.
-
-    + Amortization: same basic idea as depreciation, but it applies to intangible assets (patents, copyrights, and goodwill)
-
-## 5. Income Statement - Meaning of KPI
-
-- Profit: there are 3 basic types of profit (Gross Profit, Operating Profit, Net Profit). How much gross profit is enough ? That varies substantially by industry, vary from one company to another in the same industry.
-
-    + Gross Profit = Sales - COGS (or COS). It is what is left over after a company has paid the direct costs incurred in making product or delivering the service. Gross profit must be sufficient to cover a business's operating expenses, taxes, financing costs, and net profit. You can also look at year-to-year trends, examining whether gross profit is headed up or headed down. If it's headed down, you can ask why: Are production costs rising ? Are you discounting too many sales? Remember: Gross profit can be greatly affected by decisions about when to recognize revenue and what to include in COGS. For example, you find that gross profit is headed down this year because service costs have gone up, and you think about cuts in service costs. It turns out that the accountants took some salaries that were previously in operating expenses and moved them into COGS. 
-
-    + Operating profit = Gross Profit - Operating Expenses (SG&A) including depreciation and amortization. So, it is known as EBIT. What has not yet been substracted from revenue is interest and taxes because operating profit is the profit a business earns from the business it is in. Taxes do not really have anything to do with how well you are running the company. Interest expenses depend on whether the company is financed with debt or equity because it does not say anything about how well it is run from an operational perspective. EBIT measures both overall demand for the company's products or services and the company's efficiency in delivering those products. Bankers and investors look at operating profit to see whether the company will be able to pay its debt and earn money for its shareholders.
-
-    + Net Profit (or so-called bottom line): is what is left over after everything is subtracted. Some of key numbers used to measure a public company, such as EPS, P/E are based on net profit. 
 
 ------------------
 **References**
