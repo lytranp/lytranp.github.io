@@ -1,43 +1,13 @@
 ---
 layout: post
 mathjax: true
-title: "Finance - Income Statement"
+title: "Finance Accounting - Income Statement"
 read: 5
 secondary: others
 date: 2021-05-06
 ---
 
-## 1. Sources of financing
-
-- Owner financing: entrepreneurs often put a lot of their own money into their businesses.
-
-- Other equity investment: friends, family (so-called angel investors) put their money into business and they expect shares of stock in return. If their invesment is large enough, they are part owners of the business and can make decisions. If you succeed, their stock will grow in value. If you fail, they may lose their investment.
-
-- Debt: you can also ask for loans from friends and family or from local bank. But people who lend you money are not part owner of business and can not make decisions. You have to pay them back on agree-upon terms. Otherwise, they are likely to have a legal claim on assets. 
-
-## 2. Financial staff
-
-- CFO: responsible for internal departments, oversee the management and strategy of the organization from financial perspective, responsible for the quality of the financial reporting. He or she should use that info to advise CEO on the financial issues facing the company.
-
-- Treasurer: deals with the outside world: meet with analysts, communicate with investors, negotiate with bankers...This person reports to the CFO
-
-- Controller: purely internal, responsible for general accounting, financial reporting, business analysis, asset management...Without consistent data from controller, CFO and treasurer can not do their jobs
-
-## 3. Matching principle
-
-- Match the costs with the associated sale to determine profits in a given period of time.
-
-- Examples:
-
-    + If company buy products in June to resell to customers over the next several months, it does not record the cost of all those products in June. Rather, it records the cost of each product when it is sold.
-
-    + If company buy equipment in Jan and plans to use over the next three years, the cost of equipment is depreciated over the whole three years, with 1/3 equipment's cost appearing as an expense on the income statement each month (assume a simple-straight-line method of depreciation)
-
-    + Company may pay tax bill once a quarter, but every month, accountant will tuck into the income statement a figure reflecting the taxes owed on that month's profits.
-
-=> Cash-based accounting would not give an accurate picture of reality. For example, it might record a huge loss in the month when it paid for products, and correspondingly higher profit in the other months. So, everyone would not understand what caused the volatility. Accrual accounting matches costs to sales, so it gives you a more accurate picture of whether you are really making money on your sales.
-
-## 4. Income Statement - Critical thinking
+## 1. Income Statement - Critical thinking
 
 Income statement tries to measure whether the products or services that a company provides are profitable when everything is added up. Companies of all sizes use different language to put labels: Profit & Loss statement; Operating statement; Earnings statement
 
@@ -55,7 +25,7 @@ Income statement tries to measure whether the products or services that a compan
 
     + Amortization: same basic idea as depreciation, but it applies to intangible assets (patents, copyrights, and goodwill)
 
-## 5. Income Statement - Meaning of KPI
+## 2. Income Statement - Meaning of KPI
 
 - Profit: there are 3 basic types of profit (Gross Profit, Operating Profit, Net Profit). How much gross profit is enough ? That varies substantially by industry, vary from one company to another in the same industry.
 
@@ -64,6 +34,8 @@ Income statement tries to measure whether the products or services that a compan
     + Operating profit = Gross Profit - Operating Expenses (SG&A) including depreciation and amortization. So, it is known as EBIT. What has not yet been substracted from revenue is interest and taxes because operating profit is the profit a business earns from the business it is in. Taxes do not really have anything to do with how well you are running the company. Interest expenses depend on whether the company is financed with debt or equity because it does not say anything about how well it is run from an operational perspective. EBIT measures both overall demand for the company's products or services and the company's efficiency in delivering those products. Bankers and investors look at operating profit to see whether the company will be able to pay its debt and earn money for its shareholders.
 
     + Net Profit (or so-called bottom line): is what is left over after everything is subtracted. Some of key numbers used to measure a public company, such as EPS, P/E are based on net profit. 
+
+    + EPS = Net income / number of ownership shares in the company.
 
 ------------------
 **References**
