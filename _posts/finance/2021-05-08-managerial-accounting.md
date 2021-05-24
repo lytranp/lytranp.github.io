@@ -10,6 +10,7 @@ Managerial accounting is all about communicating to people inside the company. I
 
 Financial accounting of Walmart shows $495 billion in sales. But I am a Walmart manager and I need to drill down to know details that I can use to on a daily basis to run the business.
 
+
     - How many of those sales were in North America, in Mexico, in South America, in Europe, in Asia, in Africa ?
 
     - How many sales by store, and I don't want to just know it by store. I want to know sales by department. 
