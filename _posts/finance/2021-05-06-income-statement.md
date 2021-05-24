@@ -21,7 +21,7 @@ Income statement tries to measure whether the products or services that a compan
 
 - Depreciation and amortization: is another expense that is often buried in SG&A line. The way we treat this expense can greatly affect the profit on an income statement. 
 
-    + Depreciation is the expensing of a physical asset, such as a truck or a machine, over its estimated useful life. This means that the accountants figure out how long the asset is likely to be in use. But they can not know how long it will last exactly: 3 years? , 5 years ? For example, Net profit = Revenue - COGS - Expenses - Depreciation. Assuming the company bought a truck $3,000. If accountant thinks that it lasts only 1 year, then they will depreciate it at $3,000 a month that move net profit to loss of $1,000 at bottom line. But if the accountant assumed that it lasts 6 years, then they will depreciate only $500 a month and net profit jumps to $1,500.
+    + Depreciation is the expensing of a physical asset, such as a truck or a machine, over its estimated useful life. This means that the accountants figure out how long the asset is likely to be in use. But they can not know how long it will last exactly: 3 years? , 5 years ? For example, Net profit = Revenue - COGS - Expenses - Depreciation. Assuming the company bought a truck 3,000. If accountant thinks that it lasts only 1 year, then they will depreciate it at 3,000 a month that move net profit to loss of 1,000 at bottom line. But if the accountant assumed that it lasts 6 years, then they will depreciate only $500 a month and net profit jumps to 1,500.
 
     + Amortization: same basic idea as depreciation, but it applies to intangible assets (patents, copyrights, and goodwill)
 
